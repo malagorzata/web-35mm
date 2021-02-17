@@ -95,3 +95,13 @@ button:hover {
 button a:visited {
   color: black;
 }
+
+.marquee {
+  display: flex;
+  overflow-x: auto;
+}
+
+.marquee img {
+  margin-right: 1rem;
+  max-width: 30%;
+}
