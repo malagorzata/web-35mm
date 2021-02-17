@@ -103,25 +103,25 @@ body {
   backface-visibility: hidden;
   animation: slideBg 8s linear infinite 0s;
   animation-timing-function: ease-in-out;
-  background-image: url("images/IMG_2539.jpg");
+  background-image: url("images/79480034.JPG");
   z-index: -1;
 }
 
 @keyframes slideBg {
   0% {
-    background-image: url(images/IMG_2539.jpg);
+    background-image: url(images/79440021.JPG);
   }
   20% {
-    background-image: url(images/IMG_2555.jpg);
+    background-image: url(images/79480034.JPG);
   }
   40% {
-    background-image: url(images/IMG_2564.jpg);
+    background-image: url(images/79550021.JPG);
   }
   60% {
-    background-image: url(images/IMG_2576.jpg);
+    background-image: url(images/79550026.JPG);
   }
   80% {
-    background-image: url(images/IMG_2586.jpg);
+    background-image: url(images/79550034.JPG);
   }
 }
 
