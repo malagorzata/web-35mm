@@ -184,3 +184,48 @@ button a:visited {
   margin-right: 1rem;
   max-width: 30%;
 }
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.level-type,
+.format-type,
+.camera-type {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
+  gap: 2rem;
+  margin: auto 2rem;
+}
+
+.camera img {
+  max-width: 100%;
+  border: black 2px solid;
+}
+
+.camera {
+  text-align: center;
+}
+
+.cath1,
+.intro-camera {
+  text-align: center;
+  margin: 1rem;
+}
+
+.cath1 {
+  font-size: 3rem;
+}
+
+.camera a {
+  color: white;
+  text-decoration: none;
+}
