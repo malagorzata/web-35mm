@@ -2,7 +2,7 @@
   src: url(fonts/Kayak\ Sans\ Regular.otf);
   font-family: Kayak Regular;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -152,33 +152,36 @@ body {
 
 .titleText p {
   font-size: 1.4rem;
+  font-family: "Playfair Display", serif;
+  line-height: 1.2em;
 }
 
 button {
-  position: relative;
+  height: 5rem;
+  width: 10rem;
   margin-top: 4rem;
-  background: cornflowerblue;
-  border: solid cornflowerblue;
-  color: black;
+  background-color: #bb5657;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: Kayak Regular;
+  color: white;
+  border-radius: 1rem;
 }
 
 button a:link {
-  color: black;
+  color: white;
 }
 
 button a:hover {
-  color: black;
+  color: white;
 }
 
 button:hover {
-  background-color: blue;
+  background-color: #e3a22a;
 }
 
 button a:visited {
-  color: black;
+  color: white;
 }
 
 .marquee {
@@ -195,32 +198,39 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
-  margin-top: 3rem;
   margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  /* font-family: Arial, Helvetica, sans-serif;
+  color: #4a6040; */
 }
 
 #marquee {
   background-color: white;
 }
 
+#boxes {
+  background-color: #e3a22a;
+  padding-bottom: 3rem;
+}
 .boxes {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
 
-#box1 {
+.box1 {
   width: 35vw;
   height: 20vw;
-  background: #e3a22a;
+  background: url(images/79480034.JPG);
   margin-right: 3vw;
   border: white 3px solid;
 }
 
-#box2 {
+.box2 {
   width: 35vw;
   height: 20vw;
-  background: #e3a22a;
+  background: url(images/79550034.JPG);
+  /* background: #e3a22a; */
   margin-left: 3vw;
   border: white 3px solid;
 }
@@ -238,10 +248,20 @@ h2 {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .square a:active,
 .square a:link,
 .square a:hover,
 .square a:visited {
   text-decoration: none;
   color: #402000;
+}
+
+a .box1:hover,
+a .box2:hover {
+  transform: scale(1.1);
+  transition-duration: 0.1;
 }
