@@ -124,11 +124,10 @@ body {
 #welcomeMsg {
   display: flex;
   background-color: var(--color-2);
-  margin-bottom: 5rem;
 }
 
 #slideBG {
-  width: 100%;
+  width: 40%;
   height: 100vh;
   background-position: center center;
   background-size: cover;
@@ -160,25 +159,26 @@ body {
 
 .titleBox {
   width: 40vw;
-  margin-top: 4rem;
-  padding-right: 8rem;
-  margin-left: 5rem;
+  margin-top: 10rem;
+  padding-right: 5rem;
+  margin-left: 15rem;
 }
 
 .titleText h1 {
-  font-size: 6vw;
+  font-size: 5vw;
 }
 
 .titleText p {
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   font-family: var(--font-3);
 }
 
 button {
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   border: none;
   border-radius: 5px;
   background: var(--color-3);
@@ -191,15 +191,19 @@ button {
   transition: all 0.2s ease;
   cursor: pointer;
   margin-top: 3rem;
+  font-size: 1.5vw;
 }
 
 button:hover {
-  background-color: var(--color-2);
+  background-color: white;
   color: var(--color-3);
   transform: scale(1);
-  border: 2.5px solid var(--color-3);
   font: var(--font-2);
   font-weight: bold;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 1.5vw;
 }
 
 button:active {
@@ -344,6 +348,12 @@ a .box2:hover {
 .camera a {
   color: white;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 899px) {
+  #welcomeMsg {
+    background-color: blue;
+  }
 }
 
 /*TABLET VIEW*/
