@@ -38,6 +38,9 @@ body {
   color: var(--main-text-color);
 }
 
+.camlist {
+  background-color: #9fc1c7;
+}
 /*MENU*/
 
 #menu-overlay {
@@ -318,7 +321,7 @@ a .box2:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
   gap: 2rem;
-  margin: auto 2rem;
+  justify-content: center;
 }
 
 .camera img {
