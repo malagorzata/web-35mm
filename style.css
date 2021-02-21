@@ -582,6 +582,60 @@ a .guideBox:hover {
   margin-top: -5rem;
 }
 
+/* FILM FORMATS PAGE */
+
+.filmformatsPage {
+  overflow-x: hidden;
+}
+
+.filmformatsPage #guideTitle {
+  width: 100vw;
+  background-color: var(--color-4);
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.formatArticle {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: var(--color-2);
+}
+
+.filmImg {
+  text-align: center;
+  width: 60vw;
+  height: 40vh;
+  background: url(images/cameras-film.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10vw;
+}
+
+.formatText {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.formatText p {
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: var(--font-2);
+}
+
+.filmtypesSection {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-2);
+  justify-content: center;
+}
+
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
   /* LANDING PAGE */
@@ -761,6 +815,15 @@ a .guideBox:hover {
     background-repeat: no-repeat;
     margin: 0;
     margin-left: 2vw;
+  }
+  .formatArticle {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: var(--color-2);
   }
 }
 
