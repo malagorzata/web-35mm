@@ -347,10 +347,78 @@ a .box2:hover {
   color: white;
   text-decoration: none;
 }
+/*ABOUT US*/
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(400px, auto);
+}
 
+.one {
+  background-color: var(--color-2);
+}
+
+.two {
+  background-color: var(--color-3);
+}
+
+.three {
+  background-color: var(--color-5);
+}
+
+.four {
+  background-color: var(--color-8);
+}
+
+.intro {
+  padding-top: 2rem;
+}
+
+.intro h2 {
+  font-size: 3rem;
+}
+.intro p {
+  text-align: center;
+  font-family: var(--font-3);
+  padding-bottom: 2rem;
+  height: 140%;
+}
+
+h3 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+}
+
+.about-us p {
+  font-family: var(--font-3);
+  color: black;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.one:hover,
+.three:hover {
+  transform: translate(2rem, 2rem);
+}
+
+.two:hover,
+.four:hover {
+  transform: translate(-2rem, 2rem);
+}
 @media only screen and (max-width: 899px) {
   #welcomeMsg {
     background-color: blue;
+  }
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(200px, auto);
   }
 }
 
