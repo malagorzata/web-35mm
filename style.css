@@ -122,6 +122,8 @@ body {
   color: #ad4100;
 }
 
+/*LANDING PAGE*/
+
 /* WELCOME MESSAGE */
 
 #welcomeMsg {
@@ -348,10 +350,97 @@ a .box2:hover {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 899px) {
-  #welcomeMsg {
-    background-color: blue;
-  }
+/*GUIDES PAGE*/
+#gpTitleBox {
+  display: flex;
+  background-color: var(--color-5);
+}
+
+.gpTitle {
+  width: 40vw;
+  margin-top: 10rem;
+  padding-right: 5rem;
+  margin-left: 10rem;
+}
+
+.gpTitle h1 {
+  font-size: 5vw;
+}
+
+.gpTitleimg {
+  width: 60%;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("images/79550026.JPG");
+  z-index: 1;
+}
+
+.gpIntro {
+  margin: 7vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+}
+
+.gpIntro p {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-3);
+}
+
+.guidesSection {
+  background-color: var(--color-3);
+}
+
+.guidesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-top: 3rem;
+}
+
+.guideBox {
+  width: 25vw;
+  height: 15vw;
+  background: url(images/79440021.JPG);
+  margin-right: 3vw;
+  margin-bottom: 3vw;
+  border: white 3px solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.guideBox p {
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #402000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.guideBox p a:active,
+.guideBox p a:link,
+.guideBox p a:hover,
+.guideBox p a:visited {
+  text-decoration: none;
+  color: #402000;
+}
+
+a .guideBox:hover,
+a .guideBox:hover {
+  transform: scale(1.1);
+  transition-duration: 0.1;
 }
 
 /*TABLET VIEW*/
