@@ -129,6 +129,7 @@ body {
 #welcomeMsg {
   display: flex;
   background-color: var(--color-2);
+  padding-bottom: 5rem;
 }
 
 #slideBG {
@@ -171,6 +172,7 @@ body {
 
 .titleText h1 {
   font-size: 5vw;
+  font-family: var(--font-1);
 }
 
 .titleText p {
@@ -195,11 +197,12 @@ button {
   text-transform: uppercase;
   transition: all 0.2s ease;
   cursor: pointer;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 button:hover {
   background-color: white;
+  border: 5px solid var(--color-3);
   color: var(--color-3);
   transform: scale(1);
   font: var(--font-2);
@@ -365,6 +368,7 @@ a .box2:hover {
 
 .gpTitle h1 {
   font-size: 5vw;
+  font-family: var(--font-1);
 }
 
 .gpTitleimg {
@@ -385,10 +389,11 @@ a .box2:hover {
 }
 
 .gpIntro p {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-family: var(--font-3);
+  line-height: 2rem;
 }
 
 .guidesSection {
@@ -416,7 +421,7 @@ a .box2:hover {
 }
 
 .guideBox p {
-  font-size: 2rem;
+  font-size: 1.5vw;
   text-align: center;
   vertical-align: middle;
   position: relative;
@@ -443,8 +448,143 @@ a .guideBox:hover {
   transition-duration: 0.1;
 }
 
+/* UNDERSTANDING FP PAGE */
+.ufpPage {
+  overflow-x: hidden;
+}
+
+#guideTitle {
+  width: 100vw;
+  background-color: var(--color-2);
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#guideTitle h1 {
+  font-size: 3rem;
+  font-family: var(--font-1);
+}
+
+.listSection {
+  display: flex;
+}
+
+.listSection2 {
+  display: flex;
+}
+
+.listArticle {
+  width: 50vw;
+  padding: 5rem;
+  padding-top: 2rem;
+}
+
+.listArticle p {
+  font-family: var(--font-3);
+  font-size: 1rem;
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.listArticle h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.listArticle ol {
+  list-style: none;
+  font-family: var(--font-3);
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+
+.imgBoxes {
+  width: 50vw;
+  background-color: var(--color-5);
+  overflow: hidden;
+}
+
+.imgBox1 {
+  width: 34vw;
+  height: 23vw;
+  background: url(images/cameras-film.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  margin-left: 3rem;
+}
+
+.imgBox2 {
+  width: 34vw;
+  height: 23vw;
+  background: url(images/darkroom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 12rem;
+  margin-top: 5rem;
+}
+
+.imgBoxes2 {
+  width: 50vw;
+  background-color: var(--color-8);
+  overflow: hidden;
+}
+
+.imgBox3 {
+  width: 23vw;
+  height: 30vw;
+  background: url(images/road.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 6rem;
+  margin-left: 5rem;
+}
+
+.imgBox4 {
+  width: 23vw;
+  height: 30vw;
+  background: url(images/windowb&w.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 20rem;
+  margin-bottom: 6rem;
+  margin-top: -5rem;
+}
+
+.imgBoxes3 {
+  width: 50vw;
+  background-color: var(--color-3);
+  overflow: hidden;
+}
+
+.imgBox5 {
+  width: 23vw;
+  height: 30vw;
+  background: url(images/bluecar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 7rem;
+  margin-left: 5rem;
+}
+
+.imgBox6 {
+  width: 23vw;
+  height: 30vw;
+  background: url(images/tentphoto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 20rem;
+  margin-bottom: 6rem;
+  margin-top: -5rem;
+}
+
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
+  /* LANDING PAGE */
   #welcomeMsg {
     display: flex;
     flex-direction: column-reverse;
@@ -473,10 +613,161 @@ a .guideBox:hover {
     font-size: 3vw;
     margin-top: 2rem;
   }
+
+  /* GUIDES PAGES */
+
+  #gpTitleBox {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-5);
+  }
+
+  .gpTitle {
+    width: 100vw;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .gpTitle h1 {
+    font-size: 5vw;
+    font-family: var(--font-1);
+  }
+
+  .gpTitleimg {
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-image: url("images/79550026.JPG");
+    z-index: 1;
+  }
+
+  .guideBox {
+    width: 35vw;
+    height: 25vw;
+    background: url(images/79440021.JPG);
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+    border: white 3px solid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .guideBox p {
+    font-size: 3vw;
+  }
+
+  .listSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listSection2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .listArticle {
+    width: 100vw;
+    padding: 5rem;
+    padding-top: 2rem;
+  }
+  .imgBoxes {
+    width: 100vw;
+    background-color: var(--color-5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .imgBox1 {
+    width: 50vw;
+    height: 40vh;
+    background: url(images/cameras-film.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBox2 {
+    width: 50vw;
+    height: 40vh;
+    background: url(images/darkroom.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBoxes2 {
+    width: 100vw;
+    background-color: var(--color-8);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .imgBox3 {
+    width: 50vw;
+    height: 80vh;
+    background: url(images/road.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-right: 2vw;
+  }
+
+  .imgBox4 {
+    width: 50vw;
+    height: 80vh;
+    background: url(images/windowb&w.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-left: 2vw;
+  }
+
+  .imgBoxes3 {
+    width: 100vw;
+    background-color: var(--color-3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .imgBox5 {
+    width: 50vw;
+    height: 80vh;
+    background: url(images/bluecar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-right: 2vw;
+  }
+
+  .imgBox6 {
+    width: 50vw;
+    height: 80vh;
+    background: url(images/tentphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-left: 2vw;
+  }
 }
 
 /*MOBILE VIEW*/
 @media only screen and (max-width: 679px) {
+  /* LANDING PAGE */
+
   #slideBG {
     width: 100%;
     height: 70vh;
@@ -509,6 +800,122 @@ a .guideBox:hover {
     cursor: pointer;
     margin-top: 2rem;
     font-size: 15px;
+  }
+
+  /* GUIDES PAGES */
+
+  .gpTitle h1 {
+    font-size: 8vw;
+    font-family: var(--font-1);
+  }
+
+  .gpIntro {
+    margin: 7vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+  }
+
+  .guideBox {
+    width: 45vw;
+    height: 35vw;
+    background: url(images/79440021.JPG);
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+    border: white 3px solid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .guideBox p {
+    font-size: 4vw;
+  }
+
+  .listArticle {
+    padding: 1rem;
+  }
+
+  .imgBoxes {
+    width: 100vw;
+    background-color: var(--color-5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .imgBox1 {
+    width: 100vw;
+    height: 60vh;
+    background: url(images/cameras-film.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBox2 {
+    width: 100vw;
+    height: 60vh;
+    background: url(images/darkroom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBoxes2 {
+    width: 100vw;
+    background-color: var(--color-8);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .imgBox3 {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/road.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBox4 {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/windowb&w.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+  .imgBoxes3 {
+    width: 100vw;
+    background-color: var(--color-3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .imgBox5 {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/bluecar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBox6 {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/tentphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 20rem;
+    margin: 0;
   }
 }
 
