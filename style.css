@@ -355,6 +355,58 @@ a .box2:hover {
   color: white;
   text-decoration: none;
 }
+
+/*CHECKBOXES*/
+
+form {
+  padding: 2rem;
+}
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes,
+#checkboxes2,
+#checkboxes3 {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label,
+#checkboxes2 label,
+#checkboxes3 label {
+  display: block;
+}
+
+#checkboxes label:hover,
+#checkboxes2 label:hover,
+#checkboxes3 label:hover {
+  background-color: #1e90ff;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 /*ABOUT US*/
 .about-us {
   display: grid;
