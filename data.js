@@ -1,4 +1,5 @@
 const url = "https://web35mm-e688.restdb.io/rest/cameras?max=19";
+const mediaurl ="https://web35mm-e688.restdb.io/media";
 
 /*API key*/
 const options = {
@@ -20,12 +21,12 @@ fetch(url, options)
     handleData(data);
   })
   .catch((e) => {
-    console.error("an error occured", e.message);
+    console.error("an error occured:", e.message);
   });
 
 function handleData(data) {
   console.log(data);
-  data.forEach(showProduct); 
+  data.forEach(showProduct);
 }
 
 /* <template id="camera">
@@ -45,13 +46,15 @@ function showProduct(product) {
   //clone it
   const copy = template.cloneNode(true);
   //change the content
-  document.querySelector(".cameraName").textContent = product.cameraName;
-  document.querySelector(".format").textContent = product.format;
-  document.querySelector(".level").textContent = product.level;
-  document.querySelector("img.cameraimg").src = 'img';
-
+  copy.querySelector(".cameraName").textContent = product.cameraName;
+  copy.querySelector(".format").textContent = product.format;
+  copy.querySelector(".level").textContent = product.level;
+  copy.querySelector("img.cameraimg").src = "img";
+const imgurl = mediaurl + product.img[0];
+copy.querySelector(".cameraimg").src = imgurl;
+console.log(imgurl);
   //grab the parent
-  const parent = document.querySelector("main");
+  const parent = document.querySelector(".products");
   //append
   parent.appendChild(copy);
 }
