@@ -30,15 +30,15 @@ body {
   --marquee-animation-duration: calc(var(--marquee-elements) * 6s);
 }
 
-.marquee {
+.marquee2 {
   width: var(--marquee-width);
   height: var(--marquee-height);
   color: #eee;
   overflow: hidden;
   position: relative;
 }
-.marquee:before,
-.marquee:after {
+.marquee2:before,
+.marquee2:after {
   position: absolute;
   top: 0;
   width: 2rem;
@@ -46,11 +46,11 @@ body {
   content: "";
   z-index: 1;
 }
-.marquee:before {
+.marquee2:before {
   left: 0;
   background: linear-gradient(to right, blue 0%, transparent 100%);
 }
-.marquee:after {
+.marquee2:after {
   right: 0;
   background: linear-gradient(to left, blue 0%, transparent 100%);
 }
@@ -95,7 +95,7 @@ body {
   border: 5px solid blue;
 }
 
-.titleBox {
+.portfolioTitleBox {
   position: absolute;
   width: 20rem;
   height: 100vh;
@@ -103,17 +103,17 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.titleText {
+.portfolioTitleText {
   margin: 1rem;
   margin-top: 10rem;
 }
 
-.titleText h1 {
+.portfolioTitleText h1 {
   margin-bottom: 2rem;
   font-size: 3rem;
 }
 
-.titleText p {
+.portfolioTitleText p {
   font-size: 1.4rem;
 }
 
@@ -159,8 +159,8 @@ h2 {
     --marquee-elements-displayed: 1;
     --marquee-animation-duration: calc(var(--marquee-elements) * 8s);
   }
-  .marquee:before,
-  .marquee:after {
+  .marquee2:before,
+  .marquee2:after {
     width: 2rem;
   }
 
@@ -182,15 +182,15 @@ Slideshow :root {
   --marquee-animation-duration: calc(var(--marquee-elements) * 6s);
 }
 
-.marquee {
+.marquee2 {
   width: var(--marquee-width);
   height: var(--marquee-height);
   color: #eee;
   overflow: hidden;
   position: relative;
 }
-.marquee:before,
-.marquee:after {
+.marquee2:before,
+.marquee2:after {
   position: absolute;
   top: 0;
   width: 2rem;
@@ -260,15 +260,15 @@ h2 {
   --marquee-animation-duration: calc(var(--marquee-elements) * 6s);
 }
 
-.marquee {
+.marquee2 {
   width: var(--marquee-width);
   height: var(--marquee-height);
   color: #eee;
   overflow: hidden;
   position: relative;
 }
-.marquee:before,
-.marquee:after {
+.marquee2:before,
+.marquee2:after {
   position: absolute;
   top: 0;
   width: 2rem;
