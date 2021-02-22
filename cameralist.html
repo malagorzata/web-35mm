@@ -27,33 +27,89 @@
         searching for an update?<br />We got your back. Explore your options
         with us.
       </p>
-      <section class="categories">
-        <article class="level-type">
-          <h3>ARE YOU:</h3>
-          <ul>
-            <li>BEGINNER</li>
-            <li>INTERMEDIARE</li>
-            <li>ADVANCED</li>
-          </ul>
-        </article>
-        <article class="format-type">
-          <h3>LOOKING FOR:</h3>
-          <ul>
-            <li>SMALL FORMAT (35MM)</li>
-            <li>MEDIUM FORMAT (120MM)</li>
-            <li>LARGE FORMAT</li>
-          </ul>
-        </article>
-        <article class="camera-type">
-          <h3>INTERESTED IN:</h3>
-          <ul>
-            <li>POINT-AND-SHOOT</li>
-            <li>SLR</li>
-            <li>RANGEFINDER</li>
-          </ul>
-        </article>
-      </section>
+      <div class="options">
+        <form>
+          <p><b>ARE YOU</b></p>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes()">
+              <select>
+                <option>Select an option</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes">
+              <label for="one">
+                <input type="checkbox" id="one" />
+                <span class="checkmark"></span> BEGINNER</label
+              >
+              <label for="two">
+                <input type="checkbox" id="two" />
+                <span class="checkmark"></span> INTERMEDIARE</label
+              >
+              <label for="three">
+                <input type="checkbox" id="three" />
+                <span class="checkmark"></span> ADVANCED</label
+              >
+            </div>
+          </div>
+        </form>
 
+        <form>
+          <p><b>FORMAT NEEDED:</b></p>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes2()">
+              <select>
+                <option>Select an option</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes2">
+              <label for="one">
+                <input type="checkbox" id="one" />
+                <span class="checkmark"></span> SMALL (35MM)</label
+              >
+              <label for="two">
+                <input type="checkbox" id="two" />
+                <span class="checkmark"></span> MEDIUM (120MM)</label
+              >
+              <label for="three">
+                <input type="checkbox" id="three" />
+                <span class="checkmark"></span> LARGE (220MM)</label
+              >
+            </div>
+          </div>
+        </form>
+
+        <form>
+          <p><b>CAMERA NEEDED:</b></p>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes3()">
+              <select>
+                <option>Select an option</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes3">
+              <label for="one">
+                <input type="checkbox" id="one" />
+                <span class="checkmark"></span> POINT AND SHOOT</label
+              >
+              <label for="two">
+                <input type="checkbox" id="two" />
+                <span class="checkmark"></span>SLR</label
+              >
+              <label for="three">
+                <input type="checkbox" id="three" />
+                <span class="checkmark"></span> RANGEFINDER</label
+              >
+              <label for="four">
+                <input type="checkbox" id="four" />
+                <span class="checkmark"></span> TLR</label
+              >
+            </div>
+          </div>
+        </form>
+      </div>
 
       <template id="cameraTemplate">
         <article class="camera">
@@ -66,7 +122,6 @@
       </template>
 
       <div class="products">
-       
         <!-- <article class="camera">
           <img class="cameraimg" src="images/nikon-fm2.jpg" alt="Camera" />
           <h3>NIKON FM2</h3>
