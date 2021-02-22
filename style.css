@@ -311,18 +311,13 @@ a .box2:hover {
   transform: scale(1.1);
   transition-duration: 0.1;
 }
+
+/*camera list*/
+
 .categories {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.level-type,
-.format-type,
-.camera-type {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
 }
 
 .products {
