@@ -123,11 +123,14 @@ body {
   color: #ad4100;
 }
 
+/*LANDING PAGE*/
+
 /* WELCOME MESSAGE */
 
 #welcomeMsg {
   display: flex;
   background-color: var(--color-2);
+  padding-bottom: 5rem;
 }
 
 #slideBG {
@@ -171,6 +174,7 @@ body {
 
 .titleText h1 {
   font-size: 5vw;
+  font-family: var(--font-1);
 }
 
 .titleText p {
@@ -195,10 +199,12 @@ button {
   text-transform: uppercase;
   transition: all 0.2s ease;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 button:hover {
   background-color: white;
+  border: 5px solid var(--color-3);
   color: var(--color-3);
   transform: scale(1);
   font: var(--font-2);
@@ -376,6 +382,28 @@ a .box2:hover {
 .auTitleimg {
   width: 100%;
   height: 70vh;
+}
+/*GUIDES PAGE*/
+#gpTitleBox {
+  display: flex;
+  background-color: var(--color-5);
+}
+
+.gpTitle {
+  width: 40vw;
+  margin-top: 5rem;
+  padding-right: 5rem;
+  margin-left: 10rem;
+}
+
+.gpTitle h1 {
+  font-size: 5vw;
+  font-family: var(--font-1);
+}
+
+.gpTitleimg {
+  width: 60%;
+  height: 80vh;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -383,7 +411,8 @@ a .box2:hover {
   background-image: url("images/background.jpg");
   z-index: 1;
 }
-h3 {
+
+.about-us h3 {
   font-size: 3.5rem;
   text-align: center;
   color: white;
@@ -414,10 +443,415 @@ footer {
     grid-gap: 5px;
     grid-auto-rows: minmax(200px, auto);
   }
+  .gpTitleimg {
+    background-image: url("images/79550026.JPG");
+    z-index: 1;
+  }
+}
+.gpIntro {
+  margin: 7vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+}
+
+.gpIntro p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-3);
+  line-height: 2rem;
+}
+
+.guidesSection {
+  background-color: var(--color-3);
+}
+
+.guidesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-top: 3rem;
+}
+
+.guideBox {
+  width: 25vw;
+  height: 15vw;
+  background: url(images/79440021.JPG);
+  margin-right: 3vw;
+  margin-bottom: 3vw;
+  border: white 3px solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.guideBox p {
+  font-size: 1.5vw;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #402000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.guideBox p a:active,
+.guideBox p a:link,
+.guideBox p a:hover,
+.guideBox p a:visited {
+  text-decoration: none;
+  color: #402000;
+}
+
+a .guideBox:hover,
+a .guideBox:hover {
+  transform: scale(1.1);
+  transition-duration: 0.1;
+}
+
+/* UNDERSTANDING FP PAGE */
+.ufpPage {
+  overflow-x: hidden;
+}
+
+.titleImage4 {
+  width: 100%;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("images/phan-bach-8svhTppbM1Y-unsplash.jpg");
+}
+
+#guideTitle {
+  width: 100vw;
+  background-color: var(--color-2);
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#guideTitle h1 {
+  font-size: 3rem;
+  font-family: var(--font-1);
+}
+
+.listSection {
+  display: flex;
+}
+
+.listSection2 {
+  display: flex;
+}
+
+.listArticle {
+  width: 50vw;
+  padding: 5rem;
+  padding-top: 2rem;
+}
+
+.listArticle p {
+  font-family: var(--font-3);
+  font-size: 1rem;
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.listArticle h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.listArticle ol {
+  list-style: none;
+  font-family: var(--font-3);
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+
+.imgBoxes {
+  width: 50vw;
+  background-color: var(--color-5);
+  overflow: hidden;
+}
+
+.imgBox1 {
+  width: 34vw;
+  height: 23vw;
+  background: url(images/cameras-film.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  margin-left: 3rem;
+}
+
+.imgBox2 {
+  width: 34vw;
+  height: 23vw;
+  background: url(images/darkroom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 12rem;
+  margin-top: 5rem;
+}
+
+.imgBoxes2 {
+  width: 50vw;
+  background-color: var(--color-8);
+  overflow: hidden;
+}
+
+.imgBox3 {
+  width: 23vw;
+  height: 30vw;
+  background: url(images/road.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 6rem;
+  margin-left: 5rem;
+}
+
+.imgBox4 {
+  width: 23vw;
+  height: 30vw;
+  background: url(images/windowb&w.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 20rem;
+  margin-bottom: 6rem;
+  margin-top: -5rem;
+}
+
+.imgBoxes3 {
+  width: 50vw;
+  background-color: var(--color-3);
+  overflow: hidden;
+}
+
+.imgBox5 {
+  width: 23vw;
+  height: 30vw;
+  background: url(images/bluecar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 7rem;
+  margin-left: 5rem;
+}
+
+.imgBox6 {
+  width: 23vw;
+  height: 30vw;
+  background: url(images/tentphoto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 20rem;
+  margin-bottom: 6rem;
+  margin-top: -5rem;
+}
+
+/* FILM FORMATS PAGE */
+
+.filmformatsPage {
+  overflow-x: hidden;
+}
+
+.filmformatsPage #guideTitle {
+  width: 100vw;
+  background-color: var(--color-4);
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.titleImage3 {
+  width: 100%;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("images/gemma-evans-ms0osWtK9A8-unsplash.jpg");
+}
+
+.formatsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.formatArticle {
+  border: 8px solid var(--color-5);
+  background-color: var(--color-3);
+  padding: 1rem;
+}
+
+.formatArticle img {
+  max-width: 100%;
+}
+
+/* .formatArticle {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: var(--color-2);
+} */
+
+/* .filmImg {
+  text-align: center;
+  width: 60vw;
+  height: 40vh;
+  background: url(images/cameras-film.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10vw;
+} */
+
+/* .formatText {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.formatText p {
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: var(--font-2);
+} */
+
+.formatText h3 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.formatText p {
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: var(--font-2);
+}
+
+.formatsGrid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.formatsGrid2 .formatArticle {
+  border: 8px solid var(--color-7);
+  background-color: var(--color-4);
+  padding: 1rem;
+}
+
+.filmtypesSection {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--color-2);
+  justify-content: center;
+}
+
+/* TYPES OF CAMERA PAGE */
+.typescameraPage #guideTitle {
+  width: 100vw;
+  background-color: var(--color-3);
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.titleImage {
+  width: 100%;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("images/andrii-lytvynko-eH2dtua5MWQ-unsplash.jpg");
+}
+
+.typescameraGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.typeCamera {
+  border: 8px solid var(--color-3);
+  background-color: var(--color-2);
+  padding: 1rem;
+}
+
+.typeCamera img {
+  max-width: 100%;
+}
+
+.typeCInfo h3 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.typeCInfo p {
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: var(--font-2);
+}
+
+.buttonDiv {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+/*BUYING PAGE*/
+
+.buyingPage #guideTitle {
+  width: 100vw;
+  background-color: var(--color-9);
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.titleImage2 {
+  width: 100%;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("images/raygar-he-2qkbfeh3JmM-unsplash.jpg");
+}
+
+.buttonDiv2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: -4rem;
 }
 
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
+  /* LANDING PAGE */
   #welcomeMsg {
     display: flex;
     flex-direction: column-reverse;
@@ -446,10 +880,170 @@ footer {
     font-size: 3vw;
     margin-top: 2rem;
   }
+
+  /* GUIDES PAGES */
+
+  #gpTitleBox {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-5);
+  }
+
+  .gpTitle {
+    width: 100vw;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .gpTitle h1 {
+    font-size: 5vw;
+    font-family: var(--font-1);
+  }
+
+  .gpTitleimg {
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    background-image: url("images/79550026.JPG");
+    z-index: 1;
+  }
+
+  .guideBox {
+    width: 35vw;
+    height: 25vw;
+    background: url(images/79440021.JPG);
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+    border: white 3px solid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .guideBox p {
+    font-size: 3vw;
+  }
+
+  .listSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listSection2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .listArticle {
+    width: 100vw;
+    padding: 5rem;
+    padding-top: 2rem;
+  }
+  .imgBoxes {
+    width: 100vw;
+    background-color: var(--color-5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .imgBox1 {
+    width: 50vw;
+    height: 40vh;
+    background: url(images/cameras-film.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBox2 {
+    width: 50vw;
+    height: 40vh;
+    background: url(images/darkroom.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBoxes2 {
+    width: 100vw;
+    background-color: var(--color-8);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .imgBox3 {
+    width: 50vw;
+    height: 80vh;
+    background: url(images/road.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-right: 2vw;
+  }
+
+  .imgBox4 {
+    width: 50vw;
+    height: 80vh;
+    background: url(images/windowb&w.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-left: 2vw;
+  }
+
+  .imgBoxes3 {
+    width: 100vw;
+    background-color: var(--color-3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .imgBox5 {
+    width: 50vw;
+    height: 80vh;
+    background: url(images/bluecar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-right: 2vw;
+  }
+
+  .imgBox6 {
+    width: 50vw;
+    height: 80vh;
+    background: url(images/tentphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-left: 2vw;
+  }
+  /* .formatArticle {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: var(--color-2);
+  } */
 }
 
 /*MOBILE VIEW*/
 @media only screen and (max-width: 679px) {
+  /* LANDING PAGE */
+
   #slideBG {
     width: 100%;
     height: 70vh;
@@ -481,6 +1075,122 @@ footer {
     transition: all 0.2s ease;
     cursor: pointer;
     font-size: 15px;
+  }
+
+  /* GUIDES PAGES */
+
+  .gpTitle h1 {
+    font-size: 8vw;
+    font-family: var(--font-1);
+  }
+
+  .gpIntro {
+    margin: 7vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+  }
+
+  .guideBox {
+    width: 45vw;
+    height: 35vw;
+    background: url(images/79440021.JPG);
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+    border: white 3px solid;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .guideBox p {
+    font-size: 4vw;
+  }
+
+  .listArticle {
+    padding: 1rem;
+  }
+
+  .imgBoxes {
+    width: 100vw;
+    background-color: var(--color-5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .imgBox1 {
+    width: 100vw;
+    height: 60vh;
+    background: url(images/cameras-film.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBox2 {
+    width: 100vw;
+    height: 60vh;
+    background: url(images/darkroom.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBoxes2 {
+    width: 100vw;
+    background-color: var(--color-8);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .imgBox3 {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/road.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBox4 {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/windowb&w.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+  .imgBoxes3 {
+    width: 100vw;
+    background-color: var(--color-3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .imgBox5 {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/bluecar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .imgBox6 {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/tentphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 20rem;
+    margin: 0;
   }
 }
 
