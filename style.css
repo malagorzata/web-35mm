@@ -453,6 +453,16 @@ a .guideBox:hover {
   overflow-x: hidden;
 }
 
+.titleImage4 {
+  width: 100%;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("images/phan-bach-8svhTppbM1Y-unsplash.jpg");
+}
+
 #guideTitle {
   width: 100vw;
   background-color: var(--color-2);
@@ -596,7 +606,35 @@ a .guideBox:hover {
   padding-bottom: 3rem;
 }
 
+.titleImage3 {
+  width: 100%;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("images/gemma-evans-ms0osWtK9A8-unsplash.jpg");
+}
+
+.formatsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 .formatArticle {
+  border: 8px solid var(--color-5);
+  background-color: var(--color-3);
+  padding: 1rem;
+}
+
+.formatArticle img {
+  max-width: 100%;
+}
+
+/* .formatArticle {
   width: 50vw;
   display: flex;
   flex-direction: column;
@@ -604,9 +642,9 @@ a .guideBox:hover {
   padding-left: 3rem;
   padding-right: 3rem;
   background-color: var(--color-2);
-}
+} */
 
-.filmImg {
+/* .filmImg {
   text-align: center;
   width: 60vw;
   height: 40vh;
@@ -614,9 +652,9 @@ a .guideBox:hover {
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: 10vw;
-}
+} */
 
-.formatText {
+/* .formatText {
   text-align: center;
   margin-top: 1rem;
 }
@@ -627,6 +665,33 @@ a .guideBox:hover {
   line-height: 2rem;
   font-size: 1.2rem;
   font-family: var(--font-2);
+} */
+
+.formatText h3 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.formatText p {
+  text-align: left;
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: var(--font-2);
+}
+
+.formatsGrid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.formatsGrid2 .formatArticle {
+  border: 8px solid var(--color-7);
+  background-color: var(--color-4);
+  padding: 1rem;
 }
 
 .filmtypesSection {
@@ -652,7 +717,7 @@ a .guideBox:hover {
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  background-image: url("images/gemma-evans-ms0osWtK9A8-unsplash.jpg");
+  background-image: url("images/andrii-lytvynko-eH2dtua5MWQ-unsplash.jpg");
 }
 
 .typescameraGrid {
@@ -664,8 +729,8 @@ a .guideBox:hover {
 }
 
 .typeCamera {
-  border: 8px solid var(--color-4);
-  background-color: var(--color-5);
+  border: 8px solid var(--color-3);
+  background-color: var(--color-2);
   padding: 1rem;
 }
 
@@ -688,6 +753,34 @@ a .guideBox:hover {
 
 .buttonDiv {
   text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+/*BUYING PAGE*/
+
+.buyingPage #guideTitle {
+  width: 100vw;
+  background-color: var(--color-9);
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.titleImage2 {
+  width: 100%;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-image: url("images/raygar-he-2qkbfeh3JmM-unsplash.jpg");
+}
+
+.buttonDiv2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: -4rem;
 }
 
 /*TABLET VIEW*/
@@ -870,7 +963,7 @@ a .guideBox:hover {
     margin: 0;
     margin-left: 2vw;
   }
-  .formatArticle {
+  /* .formatArticle {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -878,7 +971,7 @@ a .guideBox:hover {
     padding-left: 3rem;
     padding-right: 3rem;
     background-color: var(--color-2);
-  }
+  } */
 }
 
 /*MOBILE VIEW*/
