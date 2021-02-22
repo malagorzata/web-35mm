@@ -435,6 +435,37 @@ form {
   backface-visibility: hidden;
   background-image: url("images/background.jpg");
 }
+
+.aboutBox p {
+  font-size: 0.5rem;
+}
+
+.about-us h3 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+}
+
+.about-us p {
+  font-family: var(--font-3);
+  color: black;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.intro {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-family: var(--font-3);
+}
+
+.aboutBox {
+  margin-top: 10%;
+}
+
 /*GUIDES PAGE*/
 #gpTitleBox {
   display: flex;
@@ -462,22 +493,6 @@ form {
   backface-visibility: hidden;
   background-image: url("images/background.jpg");
   z-index: 1;
-}
-
-.about-us h3 {
-  font-size: 3.5rem;
-  text-align: center;
-  color: white;
-  padding-top: 1rem;
-}
-
-.about-us p {
-  font-family: var(--font-3);
-  color: black;
-  font-size: 1.3rem;
-  line-height: 2rem;
-  text-align: center;
-  padding: 1rem;
 }
 
 footer {
@@ -930,7 +945,12 @@ a .guideBox:hover {
     grid-gap: 5px;
     grid-auto-rows: minmax(200px, auto);
   }
-
+  .intro {
+    font-size: 1rem;
+  }
+  .aboutBox {
+    margin: 0;
+  }
   /* GUIDES PAGES */
 
   #gpTitleBox {
