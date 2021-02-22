@@ -1,5 +1,5 @@
 const url = "https://web35mm-e688.restdb.io/rest/cameras?max=19";
-const mediaurl ="https://web35mm-e688.restdb.io/media";
+const mediaurl = "https://web35mm-e688.restdb.io/media";
 
 /*API key*/
 const options = {
@@ -50,9 +50,9 @@ function showProduct(product) {
   copy.querySelector(".format").textContent = product.format;
   copy.querySelector(".level").textContent = product.level;
   copy.querySelector("img.cameraimg").src = "img";
-const imgurl = mediaurl + product.img[0];
-copy.querySelector(".cameraimg").src = imgurl;
-console.log(imgurl);
+  const imgurl = mediaurl + product.img[0];
+  copy.querySelector(".cameraimg").src = imgurl;
+  console.log(imgurl);
   //grab the parent
   const parent = document.querySelector(".products");
   //append
