@@ -438,21 +438,7 @@ footer {
   padding-bottom: 3rem;
   padding-left: 1rem;
 }
-@media only screen and (max-width: 899px) {
-  #welcomeMsg {
-    background-color: blue;
-  }
-  .about-us {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-    grid-auto-rows: minmax(200px, auto);
-  }
-  .gpTitleimg {
-    background-image: url("images/79550026.JPG");
-    z-index: 1;
-  }
-}
+
 .gpIntro {
   margin: 7vw;
   padding-right: 8vw;
@@ -884,6 +870,14 @@ a .guideBox:hover {
   .titleText p {
     font-size: 3vw;
     margin-top: 2rem;
+  }
+
+  /* ABOUT US PAGE */
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(200px, auto);
   }
 
   /* GUIDES PAGES */
