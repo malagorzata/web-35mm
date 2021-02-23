@@ -1441,6 +1441,9 @@ a .guideBox:hover {
   }
   .marquee img {
     max-width: 60%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
   }
   .pos {
     position: absolute;
