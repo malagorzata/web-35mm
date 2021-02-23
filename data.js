@@ -80,17 +80,6 @@ function handleData(data) {
   data.forEach(showProduct);
 }
 
-/* <template id="camera">
-      <div class="products">
-        <article class="camera">
-          <img class="cameraimg" src="images/nikon-fm2.jpg" alt="Camera" />
-          <h3 class="cameraName">NIKON FM2</h3>
-          <p class="format">35mm</p>
-          <p class="level">Beginner</p>
-          <a href="#">Read More</a>
-        </article>
-      </template> */
-
 function showProduct(product) {
   //grab the template
   const template = document.querySelector("#cameraTemplate").content;

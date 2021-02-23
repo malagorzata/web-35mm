@@ -370,9 +370,15 @@ a .box2:hover {
 }
 
 .intro-camera {
+<<<<<<< HEAD
+ font-size: 1.2rem;
+ text-align: center;
+ margin-top: 3rem;
+=======
   font-size: 1.2rem;
   text-align: center;
   margin-top: 2rem;
+>>>>>>> f4496f50d3b589651261aaf7c353eb71dfffd949
 }
 
 .cath1 {
@@ -452,8 +458,8 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 /*ABOUT US*/
 .about-us {
