@@ -34,4 +34,8 @@ function handleCameras(cameras) {
   document.querySelector(".type").textContent = cameras.type;
   document.querySelector(".description").textContent = cameras.description;
   document.querySelector("#cameraView h2").textContent = cameras.cameraName;
+  document.querySelector(
+    ".camera-image"
+  ).src = `https://web35mm-e688.restdb.io/media/${cameras.img}?s=w`;
+  document.querySelector(".name").textContent = cameras.cameraName;
 }

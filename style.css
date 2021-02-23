@@ -43,10 +43,13 @@ body {
   background: url(images/logo-fpc.svg);
   width: 15vh;
   height: 12vh;
-  position: absolute;
-  top: 62%;
-  left: 46%;
   animation: 1s rotate infinite;
+}
+
+.pos {
+  position: absolute;
+  top: 51vh;
+  left: 46vw;
 }
 
 @keyframes rotate {
@@ -956,7 +959,25 @@ a .guideBox:hover {
 }
 
 /*CAMERA PAGE*/
-
+.breadcrumbs {
+  list-style-type: none;
+  display: flex;
+  margin: 2rem;
+}
+.breadcrumbs li::after {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  content: "";
+  transition: all 0.3s;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 14"><path fill="none" stroke="black" d="M.8 12.87l7.5-6-7.5-6"></path></svg>');
+  background-repeat: no-repeat;
+  /* url('data:image/svg+xml;utf8,<svg class="svg-arrowRight" viewBox="0 0 9 14"><path fill="none" stroke="#979797" d="M.8 12.87l7.5-6-7.5-6"></path></svg>'); */
+}
+.breadcrumbs li:last-child::after {
+  background: none;
+}
 #cameraView h2 {
   background-color: var(--color-3);
   padding: 2rem;
@@ -991,6 +1012,11 @@ a .guideBox:hover {
 
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
+  .pos {
+    position: absolute;
+    top: 52vh;
+    left: 38vw;
+  }
   /* LANDING PAGE */
   #welcomeMsg {
     display: flex;
@@ -1369,6 +1395,11 @@ a .guideBox:hover {
   h2 {
     font-size: 1.5rem;
   }
+  .pos {
+    position: absolute;
+    top: 66vh;
+    left: 41vw;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1411,11 +1442,21 @@ a .guideBox:hover {
   .marquee img {
     max-width: 60%;
   }
+  .pos {
+    position: absolute;
+    top: 106vh;
+    left: 33vw;
+  }
 }
 
 @media only screen and (min-width: 1420px) {
   .products {
     grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+  }
+  .pos {
+    position: absolute;
+    top: 63vh;
+    left: 45.5vw;
   }
 }
 
