@@ -19,107 +19,56 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
+  
 
     <main>
-      <h1 class="cath1">FIND YOUR MATCH</h1>
+      <section id="catheader">
+      <h1 class="cath1">Find Your Match</h1>
+    </section>
+    <section id="subheader">
       <p class="intro-camera">
         Looking for a film camera but don’t know where to start? Or maybe
         searching for an update?<br />We got your back. Explore your options
         with us.
       </p>
+    </section>
       <div class="options">
         <form>
-          <p><b>ARE YOU</b></p>
+          <p><b>Are You</b></p>
           <select class="level">
             <option>Show all</option>
             <option>Beginner</option>
             <option>Intermediate</option>
             <option>Advanced</option>
           </select>
-          <div class="multiselect">
-            <div class="selectBox" onclick="showCheckboxes()">
-              <select>
-                <option>Select an option</option>
-              </select>
-              <div class="overSelect"></div>
-            </div>
-            <div id="checkboxes">
-              <label for="one">
-                <input type="checkbox" id="one" />
-                <span class="checkmark"></span> BEGINNER</label
-              >
-              <label for="two">
-                <input type="checkbox" id="two" />
-                <span class="checkmark"></span> INTERMEDIARE</label
-              >
-              <label for="three">
-                <input type="checkbox" id="three" />
-                <span class="checkmark"></span> ADVANCED</label
-              >
-            </div>
-          </div>
         </form>
 
         <form>
-          <p><b>FORMAT NEEDED:</b></p>
-          <div class="multiselect">
-            <div class="selectBox" onclick="showCheckboxes2()">
-              <select>
-                <option>Select an option</option>
-              </select>
-              <div class="overSelect"></div>
-            </div>
-            <div id="checkboxes2">
-              <label for="one">
-                <input type="checkbox" id="one" />
-                <span class="checkmark"></span> SMALL (35MM)</label
-              >
-              <label for="two">
-                <input type="checkbox" id="two" />
-                <span class="checkmark"></span> MEDIUM (120MM)</label
-              >
-              <label for="three">
-                <input type="checkbox" id="three" />
-                <span class="checkmark"></span> LARGE (220MM)</label
-              >
-            </div>
-          </div>
+          <form>
+            <p><b>Format Needed</b></p>
+            <select class="format">
+              <option>Show all</option>
+              <option>35mm</option>
+              <option>120mm</option>
+              <option>220mm</option>
+            </select>
         </form>
 
         <form>
-          <p><b>CAMERA NEEDED:</b></p>
-          <div class="multiselect">
-            <div class="selectBox" onclick="showCheckboxes3()">
-              <select>
-                <option>Select an option</option>
-              </select>
-              <div class="overSelect"></div>
-            </div>
-            <div id="checkboxes3">
-              <label for="one">
-                <input type="checkbox" id="one" />
-                <span class="checkmark"></span> POINT AND SHOOT</label
-              >
-              <label for="two">
-                <input type="checkbox" id="two" />
-                <span class="checkmark"></span>SLR</label
-              >
-              <label for="three">
-                <input type="checkbox" id="three" />
-                <span class="checkmark"></span> RANGEFINDER</label
-              >
-              <label for="four">
-                <input type="checkbox" id="four" />
-                <span class="checkmark"></span> TLR</label
-              >
-            </div>
-          </div>
+          <p><b>Camera Needed</b></p>
+          <select class="type">
+            <option>Show all</option>
+            <option>Point and Shoot</option>
+            <option>SLR</option>
+            <option>TLR</option>
+            <option>Rangefinder</option>
+          </select>
         </form>
       </div>
 
       <template id="cameraTemplate">
         <article class="camera">
-          <img class="cameraimg" src="" alt="Camera" />
+          <img class="cameraimg" src="https://web35mm-e688.restdb.io/media/60317f169fc7b60c00000fe8?s=w" alt="Camera" />
           <h3 class="cameraName">NIKON FM2</h3>
           <p class="format">35mm</p>
           <p class="level">Beginner</p>
@@ -128,30 +77,10 @@
       </template>
 
       <div class="products">
-        <!-- <article class="camera">
-          <img class="cameraimg" src="images/nikon-fm2.jpg" alt="Camera" />
-          <h3>NIKON FM2</h3>
-          <p class="format">35mm</p>
-          <p class="level">Beginner</p>
-          <a href="#">Read More</a>
-        </article>
-        <article class="camera">
-          <img class="cameraimg" src="images/nikon-fm2.jpg" alt="Camera" />
-          <h3>NIKON FM2</h3>
-          <p class="format">35mm</p>
-          <p class="level">Beginner</p>
-          <a href="#">Read More</a>
-        </article>
-        <article class="camera">
-          <img class="cameraimg" src="images/nikon-fm2.jpg" alt="Camera" />
-          <h3>NIKON FM2</h3>
-          <p class="format">35mm</p>
-          <p class="level">Beginner</p>
-          <a href="#">Read More</a>
-        </article> -->
       </div>
     </main>
-    <script src="main.js"></script>
+    <footer>THIS IS OUR PROJECT</footer>
+    
     <script src="data.js"></script>
   </body>
 </html>
