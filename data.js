@@ -45,8 +45,6 @@ function handleSelectType(evt) {
 // console.log(loading);
 // });
 
-
-
 /*API key*/
 const options = {
   headers: {
@@ -100,14 +98,16 @@ function showProduct(product) {
   copy.querySelector(".cameraName").textContent = product.cameraName;
   copy.querySelector(".format").textContent = product.format;
   copy.querySelector(".level").textContent = product.level;
-  copy.querySelector("img.cameraimg").src = `https://web35mm-e688.restdb.io/media/${product.img}?s=w`;
+  copy.querySelector(
+    "img.cameraimg"
+  ).src = `https://web35mm-e688.restdb.io/media/${product.img}?s=w`;
+  copy.querySelector("a").href = `camera-view.html?_id=${product.id}`;
 
   //grab the parent
   const parent = document.querySelector(".products");
   //append
   parent.appendChild(copy);
 }
-
 
 /*MENU*/
 function menuToggle() {
