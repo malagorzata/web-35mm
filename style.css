@@ -484,21 +484,6 @@ form {
   background-color: var(--color-8);
 }
 
-.one .aboutBox p {
-  color: var(--color-8);
-}
-
-.two .aboutBox p {
-  color: white;
-}
-
-.three .aboutBox p {
-  color: var(--color-7);
-}
-
-.four .aboutBox p {
-  color: var(--color-5);
-}
 .auTitleimg {
   width: 100%;
   height: 70vh;
@@ -522,7 +507,7 @@ form {
 
 .about-us p {
   font-family: var(--font-3);
-  color: black;
+  color: white;
   font-size: 1.1rem;
   line-height: 2rem;
   text-align: center;
@@ -1535,6 +1520,21 @@ footer p {
 @media only screen and (max-width: 750px) {
   .products {
     grid-template-columns: repeat(auto-fill, minmax(150px, 450px));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left,
+  .right {
+    justify-content: center;
+    padding: 1rem;
+  }
+  footer h1 {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
   }
 }
 
