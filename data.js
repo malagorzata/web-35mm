@@ -40,13 +40,6 @@ function handleSelectType(evt) {
   getData();
 }
 
-/*preloader*/
-// document.addEventListener("load", () => {
-// console.log(loading);
-// });
-
-
-
 /*API key*/
 const options = {
   headers: {
@@ -79,17 +72,6 @@ function handleData(data) {
   document.querySelector(".products").innerHTML = "";
   data.forEach(showProduct);
 }
-
-/* <template id="camera">
-      <div class="products">
-        <article class="camera">
-          <img class="cameraimg" src="images/nikon-fm2.jpg" alt="Camera" />
-          <h3 class="cameraName">NIKON FM2</h3>
-          <p class="format">35mm</p>
-          <p class="level">Beginner</p>
-          <a href="#">Read More</a>
-        </article>
-      </template> */
 
 function showProduct(product) {
   //grab the template
