@@ -937,6 +937,40 @@ a .guideBox:hover {
   margin-top: -4rem;
 }
 
+/*CAMERA PAGE*/
+
+#cameraView h2 {
+  background-color: var(--color-3);
+  padding: 2rem;
+}
+.cameraBox img {
+  margin: auto 1rem;
+  max-width: 50%;
+}
+
+.cameraBox {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.cameraDesc p {
+  font-size: 1rem;
+  font-family: var(--font-3);
+  max-width: 30rem;
+}
+
+.type {
+  font-style: italic;
+}
+.cameraName {
+  font-size: 2rem;
+}
+
+.descHead {
+  margin-top: 1rem;
+}
+
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
   /* LANDING PAGE */
