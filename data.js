@@ -53,6 +53,7 @@ const options = {
 };
 
 function getData() {
+  document.querySelector(".preloader").classList.remove("hidden");
   fetch(url, options)
     .then((response) => {
       if (!response.ok) {
@@ -64,6 +65,7 @@ function getData() {
     .then((data) => {
       // console.log(data);
       handleData(data);
+      document.querySelector(".preloader").classList.add("hidden");
     })
     .catch((e) => {
       console.error("an error occured:", e.message);
@@ -101,7 +103,7 @@ function showProduct(product) {
   copy.querySelector(
     "img.cameraimg"
   ).src = `https://web35mm-e688.restdb.io/media/${product.img}?s=w`;
-  copy.querySelector("a").href = `camera-view.html?_id=${product.id}`;
+  copy.querySelector("a").href = `camera-view.html?_id=${product._id}`;
 
   //grab the parent
   const parent = document.querySelector(".products");
