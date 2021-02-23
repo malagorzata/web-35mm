@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@font-face {
+  src: url(fonts/Kayak\ Sans\ Bold.otf);
+  font-family: Kayak-Bold;
+}
+
+@font-face {
+  src: url(fonts/Kayak\ Sans\ Regular.otf);
+  font-family: Kayak Regular;
+}
+
+:root {
+  --color-1: #7495a5;
+  --color-2: #9fc1c7;
+  --color-3: #bb5657;
+  --color-4: #ad4100;
+  --color-5: #e3a22a;
+  --color-6: #c2aa90;
+  --color-7: #402000;
+  --color-8: #204c45;
+  --color-9: #4a6040;
+
+  --font-1: Kayak-Bold;
+  --font-2: Kayak Regular;
+  --font-3: "Playfair Display", serif;
+  --main-text-color: #111;
+
+  --marquee-width: 150vw;
+  --marquee-height: 150vh;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 3;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 8s);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-2);
+  background-color: white;
+  color: var(--main-text-color);
+}
+
+.camlist {
+  background-color: #9fc1c7;
+}
+/*MENU*/
+
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #e3a22a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: 2; /*changed from 1 to 2 bc changes in slider*/
+}
+
+#menu-overlay.active {
+  transform: scale(1);
+}
+
+#menu-overlay ul {
+  position: relative;
+}
+
+#menu-overlay ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+
+#menu-overlay ul li a {
+  text-decoration: none;
+  position: relative;
+  font-size: 3em;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  color: #ad4100;
+  display: inline-block;
+}
+
+#menu-overlay ul li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ad4100;
+  transform: translateY(-50%) scaleX(0);
+  transform-origin: right;
+  transition: 0.5s transform;
+}
+
+#menu-overlay ul li a:hover:before {
+  transform: translateY(-50%) scaleX(1);
+  transform-origin: left;
+  transition: 0.5s transform;
+}
+
+#toggleIcon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3; /*changed from 2 to 3 bc changes in slider*/
+  color: #c2aa90;
+  cursor: pointer;
+}
+
+#toggleIcon p {
+  color: antiquewhite;
+  font-size: 1.5em;
+}
+
+#toggleIcon.active {
+  text-decoration: line-through;
+  color: #ad4100;
+}
+
+/* PORTFOLIO PAGE */
+
+.portfolioMain {
+  background-color: var(--color-5);
+}
+
+.portfolioMain #guideTitle {
+  background-color: var(--color-5);
+}
+
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 400px));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.portfolioArticle a {
+  text-decoration: none;
+  color: #111;
+}
+
+.portfolioPhotoBox {
+  width: 25rem;
+  height: 35rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.gosia {
+  background-image: url(images/gw_images/nyc.jpg);
+}
+
+.anna {
+  background-image: url(images/at_portfolio_35mm/at1.jpg);
+}
+
+.anas {
+  background-image: url(images/79550034.JPG);
+}
+
+.photoboxText {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 25rem;
+  height: 35rem;
+  transition: opacity 0.25s;
+}
+
+.photoboxText > * {
+  transform: translateY(-20px);
+  transition: transform 0.25s;
+}
+
+.photoboxText p {
+  position: relative;
+  font-size: 2.5rem;
+  top: 50vh;
+  text-transform: uppercase;
+}
+
+.photoboxText:hover,
+.photoboxText:hover,
+.photoboxText:hover {
+  opacity: 0;
+}
+
+.photoboxText:hover > * {
+  transform: translateY(0);
+}
+
+.portfolioGosiaPage {
+  font-family: var(--font-2);
+  background-color: var(--color-8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioAnnaPage {
+  font-family: var(--font-2);
+  background-color: var(--color-3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioAnaSPage {
+  font-family: var(--font-2);
+  background-color: var(--color-2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioAlexPage {
+  font-family: var(--font-2);
+  background-color: var(--color-9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee2 {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee2horizontal {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+/* .marquee-content:hover {
+    animation-play-state: paused;
+  } */
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+    );
+  }
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
+  white-space: nowrap;
+}
+
+.stopScrolling {
+  animation-play-state: paused;
+}
+
+.marquee-content li img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolioGosiaPage .marquee-content li img {
+  border: 10px solid var(--color-8);
+}
+
+.portfolioAnnaPage .marquee-content li img {
+  border: 10px solid var(--color-3);
+}
+
+.portfolioAnaSPage .marquee-content li img {
+  border: 10px solid var(--color-2);
+}
+
+.portfolioAlexPage .marquee-content li img {
+  border: 10px solid var(--color-9);
+}
+
+.portfolioAnaSPage .marquee-content li img {
+  width: 100%;
+  height: 50%;
+}
+
+.portfolioAlexPage .marquee-content li img {
+  width: 100%;
+  height: 50%;
+}
+
+.portfolioTitleBox {
+  position: absolute;
+  width: 8rem;
+  height: 100vh;
+  left: 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.portfolioTitleText {
+  margin: 1rem;
+  margin-top: 25rem;
+}
+
+.portfolioTitleText h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+.portfolioTitleText p {
+  font-size: 1.4rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+}
+
+/*TABLET VIEW*/
+@media only screen and (max-width: 899px) {
+  /* PORTFOLIO PAGE */
+  :root {
+    --marquee-width: 150vw;
+    --marquee-height: 150vh;
+    --marquee-elements-displayed: 2;
+    --marquee-animation-duration: calc(var(--marquee-elements) * 8s);
+  }
+
+  .portfolioTitleBox {
+    position: absolute;
+    width: 100vw;
+    height: 13vh;
+    left: 0;
+    top: 4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .portfolioTitleText {
+    display: flex;
+    margin: 0.8rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  .portfolioTitleText h1 {
+    margin: 0;
+    margin-right: 2rem;
+    font-size: 2rem;
+    transform: rotate(0);
+  }
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 679px) {
+  /* PORTFOLIO PAGE */
+  .portfolioTitleText {
+    font-size: 12px;
+  }
+  :root {
+    --marquee-width: 150vw;
+    --marquee-height: 150vh;
+    --marquee-elements-displayed: 1;
+    --marquee-animation-duration: calc(var(--marquee-elements) * 5s);
+  }
+
+  .marquee-content li img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--color-8);
+  }
+
+  .portfolioTitleBox {
+    position: absolute;
+    width: 100vw;
+    height: 9vh;
+    left: 0;
+    top: 4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .portfolioTitleText {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .portfolioTitleText h1 {
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 1.3rem;
+    transform: rotate(0);
+  }
+}
