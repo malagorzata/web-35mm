@@ -40,6 +40,11 @@ function handleSelectType(evt) {
   getData();
 }
 
+/*preloader*/
+// document.addEventListener("load", () => {
+// console.log(loading);
+// });
+
 /*API key*/
 const options = {
   headers: {
@@ -48,6 +53,7 @@ const options = {
 };
 
 function getData() {
+  document.querySelector(".preloader").classList.remove("hidden");
   fetch(url, options)
     .then((response) => {
       if (!response.ok) {
@@ -59,6 +65,7 @@ function getData() {
     .then((data) => {
       // console.log(data);
       handleData(data);
+      document.querySelector(".preloader").classList.add("hidden");
     })
     .catch((e) => {
       console.error("an error occured:", e.message);
@@ -82,14 +89,16 @@ function showProduct(product) {
   copy.querySelector(".cameraName").textContent = product.cameraName;
   copy.querySelector(".format").textContent = product.format;
   copy.querySelector(".level").textContent = product.level;
-  copy.querySelector("img.cameraimg").src = `https://web35mm-e688.restdb.io/media/${product.img}?s=w`;
+  copy.querySelector(
+    "img.cameraimg"
+  ).src = `https://web35mm-e688.restdb.io/media/${product.img}?s=w`;
+  copy.querySelector("a").href = `camera-view.html?_id=${product._id}`;
 
   //grab the parent
   const parent = document.querySelector(".products");
   //append
   parent.appendChild(copy);
 }
-
 
 /*MENU*/
 function menuToggle() {

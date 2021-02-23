@@ -39,9 +39,29 @@ body {
   color: var(--main-text-color);
 }
 
-.camlist {
-  /* background-color: #9fc1c7; */
+.preloader {
+  background: url(images/35mm_logo.png);
+  width: 45vh;
+  height: 35vh;
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  animation: 1s rotate infinite;
 }
+
+@keyframes rotate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
 /*MENU*/
 
 #menu-overlay {
@@ -325,8 +345,7 @@ a .box2:hover {
   grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
   gap: 2rem;
   justify-content: center;
-  background-color:#c2aa907a;
-
+  background-color: #c2aa907a;
 }
 
 .camera img {
@@ -350,11 +369,16 @@ a .box2:hover {
   padding-bottom: 2rem;
 }
 
-
 .intro-camera {
+<<<<<<< HEAD
  font-size: 1.2rem;
  text-align: center;
  margin-top: 3rem;
+=======
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+>>>>>>> f4496f50d3b589651261aaf7c353eb71dfffd949
 }
 
 .cath1 {
@@ -376,7 +400,7 @@ a .box2:hover {
   height: 35px;
   width: 120px;
   border-radius: 3%;
-  background-color: var(--color-5);;
+  background-color: var(--color-5);
   border-color: var(--color-5);
 }
 
@@ -1333,16 +1357,15 @@ a .guideBox:hover {
   }
 
   /*cameralist*/
-  .options{
+  .options {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
   }
 
-  .options form{
+  .options form {
     align-self: center;
   }
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -1373,7 +1396,6 @@ a .guideBox:hover {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-
 }
 
 @media only screen and (max-width: 430px) {
