@@ -40,12 +40,12 @@ body {
 }
 
 .preloader {
-  background: url(images/35mm_logo.png);
-  width: 45vh;
-  height: 35vh;
+  background: url(images/logo-fpc.svg);
+  width: 15vh;
+  height: 12vh;
   position: absolute;
-  top: 50%;
-  left: 37%;
+  top: 62%;
+  left: 46%;
   animation: 1s rotate infinite;
 }
 
