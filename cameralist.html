@@ -19,45 +19,56 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
+  
 
     <main>
-      <h1 class="cath1">FIND YOUR MATCH</h1>
+      <section id="catheader">
+      <h1 class="cath1">Find Your Match</h1>
+    </section>
+    <section id="subheader">
       <p class="intro-camera">
         Looking for a film camera but don’t know where to start? Or maybe
         searching for an update?<br />We got your back. Explore your options
         with us.
       </p>
-      <section class="categories">
-        <article class="level-type">
-          <h3>ARE YOU:</h3>
-          <ul>
-            <li>BEGINNER</li>
-            <li>INTERMEDIARE</li>
-            <li>ADVANCED</li>
-          </ul>
-        </article>
-        <article class="format-type">
-          <h3>LOOKING FOR:</h3>
-          <ul>
-            <li>SMALL FORMAT (35MM)</li>
-            <li>MEDIUM FORMAT (120MM)</li>
-            <li>LARGE FORMAT</li>
-          </ul>
-        </article>
-        <article class="camera-type">
-          <h3>INTERESTED IN:</h3>
-          <ul>
-            <li>POINT-AND-SHOOT</li>
-            <li>SLR</li>
-            <li>RANGEFINDER</li>
-          </ul>
-        </article>
-      </section>
+    </section>
+      <div class="options">
+        <form>
+          <p><b>Are You</b></p>
+          <select class="level">
+            <option>Show all</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </form>
 
+        <form>
+          <form>
+            <p><b>Format Needed</b></p>
+            <select class="format">
+              <option>Show all</option>
+              <option>35mm</option>
+              <option>120mm</option>
+              <option>220mm</option>
+            </select>
+        </form>
+
+        <form>
+          <p><b>Camera Needed</b></p>
+          <select class="type">
+            <option>Show all</option>
+            <option>Point and Shoot</option>
+            <option>SLR</option>
+            <option>TLR</option>
+            <option>Rangefinder</option>
+          </select>
+        </form>
+      </div>
 
       <template id="cameraTemplate">
         <article class="camera">
-          <img class="cameraimg" src="" alt="Camera" />
+          <img class="cameraimg" src="https://web35mm-e688.restdb.io/media/60317f169fc7b60c00000fe8?s=w" alt="Camera" />
           <h3 class="cameraName">NIKON FM2</h3>
           <p class="format">35mm</p>
           <p class="level">Beginner</p>
@@ -66,31 +77,10 @@
       </template>
 
       <div class="products">
-       
-        <!-- <article class="camera">
-          <img class="cameraimg" src="images/nikon-fm2.jpg" alt="Camera" />
-          <h3>NIKON FM2</h3>
-          <p class="format">35mm</p>
-          <p class="level">Beginner</p>
-          <a href="#">Read More</a>
-        </article>
-        <article class="camera">
-          <img class="cameraimg" src="images/nikon-fm2.jpg" alt="Camera" />
-          <h3>NIKON FM2</h3>
-          <p class="format">35mm</p>
-          <p class="level">Beginner</p>
-          <a href="#">Read More</a>
-        </article>
-        <article class="camera">
-          <img class="cameraimg" src="images/nikon-fm2.jpg" alt="Camera" />
-          <h3>NIKON FM2</h3>
-          <p class="format">35mm</p>
-          <p class="level">Beginner</p>
-          <a href="#">Read More</a>
-        </article> -->
       </div>
     </main>
-    <script src="main.js"></script>
+    <footer>THIS IS OUR PROJECT</footer>
+    
     <script src="data.js"></script>
   </body>
 </html>

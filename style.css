@@ -40,7 +40,7 @@ body {
 }
 
 .camlist {
-  background-color: #9fc1c7;
+  /* background-color: #9fc1c7; */
 }
 /*MENU*/
 
@@ -311,18 +311,13 @@ a .box2:hover {
   transform: scale(1.1);
   transition-duration: 0.1;
 }
+
+/*camera list*/
+
 .categories {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.level-type,
-.format-type,
-.camera-type {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
 }
 
 .products {
@@ -330,30 +325,117 @@ a .box2:hover {
   grid-template-columns: repeat(auto-fill, minmax(150px, 320px));
   gap: 2rem;
   justify-content: center;
+  background-color:#c2aa907a;
+
 }
 
 .camera img {
   max-width: 100%;
-  border: black 2px solid;
+  border: var(--color-5) 8px solid;
+  border-radius: 0.9%;
+  margin-top: 3rem;
+  height: 300px;
+  width: auto;
 }
 
 .camera {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.cath1,
+#catheader {
+  width: 100vw;
+  background-color: var(--color-3);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+
 .intro-camera {
-  text-align: center;
-  margin: 1rem;
+ font-size: 1.2rem;
+ text-align: center;
+ margin-top: 2rem;
 }
 
 .cath1 {
   font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 3rem;
 }
 
 .camera a {
   color: white;
   text-decoration: none;
+}
+
+.options form .level,
+.options form .format,
+.options form .type {
+  height: 35px;
+  width: 120px;
+  border-radius: 3%;
+  background-color: var(--color-5);;
+  border-color: var(--color-5);
+}
+
+.options form p {
+  text-align: center;
+}
+
+/*CHECKBOXES*/
+
+form {
+  padding: 2rem;
+}
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes,
+#checkboxes2,
+#checkboxes3 {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label,
+#checkboxes2 label,
+#checkboxes3 label {
+  display: block;
+}
+
+#checkboxes label:hover,
+#checkboxes2 label:hover,
+#checkboxes3 label:hover {
+  background-color: #1e90ff;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 /*ABOUT US*/
 .about-us {
@@ -388,6 +470,37 @@ a .box2:hover {
   backface-visibility: hidden;
   background-image: url("images/background.jpg");
 }
+
+.aboutBox p {
+  font-size: 0.5rem;
+}
+
+.about-us h3 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+  padding-top: 1rem;
+}
+
+.about-us p {
+  font-family: var(--font-3);
+  color: black;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.intro {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-family: var(--font-3);
+}
+
+.aboutBox {
+  margin-top: 10%;
+}
+
 /*GUIDES PAGE*/
 #gpTitleBox {
   display: flex;
@@ -415,22 +528,6 @@ a .box2:hover {
   backface-visibility: hidden;
   background-image: url("images/background.jpg");
   z-index: 1;
-}
-
-.about-us h3 {
-  font-size: 3.5rem;
-  text-align: center;
-  color: white;
-  padding-top: 1rem;
-}
-
-.about-us p {
-  font-family: var(--font-3);
-  color: black;
-  font-size: 1.3rem;
-  line-height: 2rem;
-  text-align: center;
-  padding: 1rem;
 }
 
 footer {
@@ -840,6 +937,40 @@ a .guideBox:hover {
   margin-top: -4rem;
 }
 
+/*CAMERA PAGE*/
+
+#cameraView h2 {
+  background-color: var(--color-3);
+  padding: 2rem;
+}
+.cameraBox img {
+  margin: auto 1rem;
+  max-width: 50%;
+}
+
+.cameraBox {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.cameraDesc p {
+  font-size: 1rem;
+  font-family: var(--font-3);
+  max-width: 30rem;
+}
+
+.type {
+  font-style: italic;
+}
+.cameraName {
+  font-size: 2rem;
+}
+
+.descHead {
+  margin-top: 1rem;
+}
+
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
   /* LANDING PAGE */
@@ -883,7 +1014,12 @@ a .guideBox:hover {
     grid-gap: 5px;
     grid-auto-rows: minmax(200px, auto);
   }
-
+  .intro {
+    font-size: 1rem;
+  }
+  .aboutBox {
+    margin: 0;
+  }
   /* GUIDES PAGES */
 
   #gpTitleBox {
@@ -1195,6 +1331,18 @@ a .guideBox:hover {
     margin-left: 20rem;
     margin: 0;
   }
+
+  /*cameralist*/
+  .options{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+
+  .options form{
+    align-self: center;
+  }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -1220,6 +1368,12 @@ a .guideBox:hover {
   .camera-type {
     padding: 1rem;
   }
+
+  .cath1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
 }
 
 @media only screen and (max-width: 430px) {
