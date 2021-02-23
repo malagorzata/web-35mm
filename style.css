@@ -557,12 +557,6 @@ form {
   z-index: 1;
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 1rem;
-}
-
 .gpIntro {
   margin: 7vw;
   padding-right: 8vw;
@@ -1016,6 +1010,36 @@ a .guideBox:hover {
   margin-top: 1rem;
 }
 
+/*FOOTER*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-3);
+}
+.footer-logo {
+  max-width: 10%;
+  align-self: center;
+}
+.inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.left,
+.right {
+  padding: 1rem;
+}
+
+footer h1 {
+  font-size: 1.5rem;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
   .pos {
@@ -1406,6 +1430,12 @@ a .guideBox:hover {
     top: 66vh;
     left: 41vw;
   }
+  .marquee img {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1456,6 +1486,17 @@ a .guideBox:hover {
     top: 106vh;
     left: 33vw;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .inside {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 1420px) {
@@ -1478,5 +1519,20 @@ a .guideBox:hover {
 @media only screen and (max-width: 750px) {
   .products {
     grid-template-columns: repeat(auto-fill, minmax(150px, 450px));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left,
+  .right {
+    justify-content: center;
+    padding: 1rem;
+  }
+  footer h1 {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
   }
 }
