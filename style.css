@@ -27,9 +27,9 @@
   --main-text-color: #111;
 
   --marquee-width: 100vw;
-  --marquee-height: 85vh;
+  --marquee-height: 93vh;
   /* --marquee-elements: 12; */ /* defined with JavaScript */
-  --marquee-elements-displayed: 3;
+  --marquee-elements-displayed: 4;
   --marquee-element-width: calc(
     var(--marquee-width) / var(--marquee-elements-displayed)
   );
@@ -887,7 +887,7 @@ a .guideBox:hover {
 }
 
 .anna {
-  background-image: url(images/79550021.JPG);
+  background-image: url(images/at_portfolio_35mm/at1.jpg);
 }
 
 .anas {
@@ -926,6 +926,15 @@ a .guideBox:hover {
 .portfolioGosiaPage {
   font-family: var(--font-2);
   background-color: var(--color-8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioAnnaPage {
+  font-family: var(--font-2);
+  background-color: var(--color-3);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -978,7 +987,14 @@ a .guideBox:hover {
 .marquee-content li img {
   width: 100%;
   height: 100%;
+}
+
+.portfolioGosiaPage .marquee-content li img {
   border: 5px solid var(--color-8);
+}
+
+.portfolioAnnaPage .marquee-content li img {
+  border: 5px solid var(--color-3);
 }
 
 .portfolioTitleBox {
@@ -996,7 +1012,8 @@ a .guideBox:hover {
 
 .portfolioTitleText h1 {
   margin-bottom: 2rem;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
 }
 
 .portfolioTitleText p {
@@ -1392,7 +1409,7 @@ a .guideBox:hover {
   }
   :root {
     --marquee-width: 100vw;
-    --marquee-height: 80vh;
+    --marquee-height: 93vh;
     --marquee-elements-displayed: 1;
     --marquee-animation-duration: calc(var(--marquee-elements) * 8s);
   }
