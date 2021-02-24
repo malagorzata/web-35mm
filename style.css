@@ -1005,11 +1005,11 @@ a .guideBox:hover {
   width: 40vw;
   margin-top: 12rem;
   padding-right: 5rem;
-  margin-left: 13.5rem;
+  margin-left: 12rem;
 }
 
 .joinustitle h1 {
-  font-size: 3.4rem;
+  font-size: 5rem;
   font-family: var(--font-1);
   color: var(--color-5);
 }
@@ -1022,8 +1022,8 @@ a .guideBox:hover {
 #joinusbanner {
   width: 100vw;
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 #joinusbanner h1 {
@@ -1031,11 +1031,17 @@ a .guideBox:hover {
   font-family: Kayak Light;
 }
 
+#joinusbanner p{
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  }
+
 #joinusbanner h2 {
   font-size: 2.5rem;
   font-family: Kayak regular;
   text-transform: none;
 }
+
 
 #infoboxes {
   display: flex;
