@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Film Photography Club</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div id="toggleIcon" onclick="menuToggle()"><p>Menu</p></div>
     <div id="menu-overlay">
       <ul>
@@ -21,12 +21,64 @@
       </ul>
     </div>
 
-    <main></main>
+    
+      <section id="joinusbox">
+        <div class="joinustitle">
+          <h1>Join Us</h1>
+        </div>
+        <div class="joinusimg">
+          <img src="images/joinus.jpg" alt="banner" />
+        </div>
+      </section>
+
+      <section id="joinusbanner">
+        <h1>
+          We are creating a community filled with film photographers <br />
+          Beginners to experts - all and inbetween are welcome.
+        </h1>
+      </section>
+
+      <section id="infoboxes">
+          <div class="boxinfo"><p>Get help form the FPC team and other Photographers</p></div>
+          <div class="boxinfo"><p>Share your work in your Portfolio on the FPC website</p></div>
+          <div class="boxinfo"><p>Entry to the FPC Facebook group with the rest of the community</p></div>
+          <div class="boxinfo"><p>Share and learn tips and trick with other film photographers</p></div>
+          <div class="boxinfo"><p>Borrow cameras and equipment form our collection</p></div>
+      </section>
+
+      <section id="joinusform">
+          <div class="logoform">
+              <img src="images/logo-fpc.svg" alt="logo">
+          </div>
+
+          <div class="input-group">
+              <input type="text" class="form-control">
+              <label for="name">Name</label>
+          </div>
+
+          <div class="input-group">
+              <input type="email" class="form-control">
+              <label for="email">E-mail</label>
+          </div>
+
+          <div class="input-group">
+            <input type="password" class="form-control">
+            <label for="password">Password</label>
+        </div>
+
+        <div class="input-group">
+            <input type="password" class="form-control">
+            <label for="confpass">Confirm Password</label>
+        </div>
+
+        <button type="submit" class="joinusButton">Submit</button>
+      </section>
+
 
     <footer>
-        Project created for the purpose of Dynamic Web module on KEA University.
-        Executed by: Ana Sofia Castellanos, Anna Thorslund and Gosia Warwaszynska.
-      </footer>
+      Project created for the purpose of Dynamic Web module on KEA University.
+      Executed by: Ana Sofia Castellanos, Anna Thorslund and Gosia Warwaszynska.
+    </footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
