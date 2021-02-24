@@ -151,7 +151,7 @@ body {
   color: #ad4100;
 }
 
-#toggleIcon p:hover{
+#toggleIcon p:hover {
   opacity: 50%;
 }
 
@@ -1048,7 +1048,7 @@ footer h1 {
 
 footer p {
   font-size: 1rem;
-/*JOIN US PAGE*/
+  /*JOIN US PAGE*/
 }
 
 #joinusbox {
@@ -1155,6 +1155,12 @@ footer p {
   margin-left: 8rem;
 }
 
+.recCam {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 400px)); */
+  display: flex;
+  overflow-x: auto;
+}
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
   .pos {

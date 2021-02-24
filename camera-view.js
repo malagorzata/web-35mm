@@ -40,3 +40,43 @@ function handleCameras(cameras) {
   ).src = `https://web35mm-e688.restdb.io/media/${cameras.img}?s=w`;
   document.querySelector(".name").textContent = cameras.cameraName;
 }
+
+fetch(url, options)
+  .then((response) => {
+    if (!response.ok) {
+      throw Error(response.statusText);
+    }
+    return response.json();
+  })
+
+  .then((dataa) => {
+    handleRec(dataa);
+  })
+  .catch((e) => {
+    console.error("an error occured:", e.message);
+  });
+
+function handleRec(dataa) {
+  console.log(dataa);
+  data.forEach(showRec);
+}
+
+function showRec(rec) {
+  console.log(rec);
+  const template = document.querySelector("#recCam").content;
+  //clone it
+  const copy = template.cloneNode(true);
+  //change the content
+  copy.querySelector(".cameraName").textContent = rec.cameraName;
+  copy.querySelector(".format").textContent = rec.format;
+  copy.querySelector(".level").textContent = rec.level;
+  copy.querySelector(
+    "img.cameraimg"
+  ).src = `https://web35mm-e688.restdb.io/media/${rec.img}?s=w`;
+  copy.querySelector("a").href = `camera-view.html?_id=${rec._id}`;
+
+  //grab the parent
+  const parent = document.querySelector(".recCam");
+  //append
+  parent.appendChild(copy);
+}
