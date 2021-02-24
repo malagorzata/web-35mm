@@ -27,11 +27,12 @@ fetch(url, options)
 
 function handleCameras(cameras) {
   console.log(cameras);
-  document.querySelector(".cameraName").textContent = cameras.cameraName;
+  document.querySelector(".cameraName-camerabox").textContent =
+    cameras.cameraName;
   document.querySelector(
     ".format-level"
   ).textContent = `${cameras.format} | ${cameras.level} `;
-  document.querySelector(".type").textContent = cameras.type;
+  document.querySelector(".type-camerabox").textContent = cameras.type;
   document.querySelector(".description").textContent = cameras.description;
   document.querySelector("#cameraView h2").textContent = cameras.cameraName;
   document.querySelector(
