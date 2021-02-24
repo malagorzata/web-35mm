@@ -148,6 +148,10 @@ body {
   color: #ad4100;
 }
 
+#toggleIcon p:hover{
+  opacity: 50%;
+}
+
 /*LANDING PAGE*/
 
 /* WELCOME MESSAGE */
