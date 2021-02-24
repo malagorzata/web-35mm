@@ -978,10 +978,10 @@ a .guideBox:hover {
   max-width: 30rem;
 }
 
-.type {
+.type-camerabox {
   font-style: italic;
 }
-.cameraName {
+.cameraName-camerabox {
   font-size: 2rem;
 }
 
