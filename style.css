@@ -28,7 +28,6 @@
 
   --font-1: Kayak-Bold;
   --font-2: Kayak Regular;
-  --font-3: "Playfair Display", serif;
   --main-text-color: #111;
 
   --marquee-width: 100vw;
@@ -222,7 +221,7 @@ body {
   font-size: 1.5vw;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-family: var(--font-3);
+  font-family: var(--font-2);
 }
 
 button {
@@ -550,7 +549,7 @@ form {
 }
 
 .about-us p {
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   color: white;
   font-size: 1.1rem;
   line-height: 2rem;
@@ -560,7 +559,7 @@ form {
 
 .intro {
   font-size: 1.5rem;
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   background-color: white;
   text-align: center;
   margin: 4rem;
@@ -618,7 +617,7 @@ form {
   font-size: 1.2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   line-height: 2rem;
 }
 
@@ -819,7 +818,7 @@ a .guideBox4:hover {
 }
 
 .listArticle p {
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   font-size: 1rem;
   margin-top: 2rem;
   line-height: 2rem;
@@ -833,7 +832,7 @@ a .guideBox4:hover {
 
 .listArticle ol {
   list-style: none;
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   font-size: 1rem;
   line-height: 2rem;
   margin-top: 2rem;
@@ -1165,7 +1164,7 @@ a .guideBox4:hover {
 
 .cameraDesc p {
   font-size: 1rem;
-  font-family: var(--font-3);
+  font-family: var(--font-2);
   max-width: 30rem;
 }
 
