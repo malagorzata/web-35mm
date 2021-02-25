@@ -41,7 +41,17 @@ function handleCameras(cameras) {
   document.querySelector(".name").textContent = cameras.cameraName;
 }
 
-fetch(url, options)
+const url1 = "https://web35mm-e688.restdb.io/rest/cameras?max=3";
+const mediaurl1 = "https://web35mm-e688.restdb.io/media/";
+
+/*API key*/
+const options1 = {
+  headers: {
+    "x-apikey": "603254a35ad3610fb5bb646f",
+  },
+};
+
+fetch(url1, options1)
   .then((response) => {
     if (!response.ok) {
       throw Error(response.statusText);
@@ -56,13 +66,13 @@ fetch(url, options)
     console.error("an error occured:", e.message);
   });
 
-function handleRec(dataa) {
-  console.log(dataa);
+function handleRec(data) {
+  console.log(data);
   data.forEach(showRec);
 }
 
 function showRec(rec) {
-  console.log(rec);
+  //grab the template
   const template = document.querySelector("#recCam").content;
   //clone it
   const copy = template.cloneNode(true);
@@ -73,7 +83,6 @@ function showRec(rec) {
   copy.querySelector(
     "img.cameraimg"
   ).src = `https://web35mm-e688.restdb.io/media/${rec.img}?s=w`;
-  copy.querySelector("a").href = `camera-view.html?_id=${rec._id}`;
 
   //grab the parent
   const parent = document.querySelector(".recCam");
