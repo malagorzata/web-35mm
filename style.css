@@ -200,7 +200,6 @@ header img {
 #welcomeMsg {
   display: flex;
   background-color: var(--color-2);
-  color: var(--color-8);
 }
 
 #slideBG {
