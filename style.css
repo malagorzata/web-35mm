@@ -579,6 +579,35 @@ form {
   margin-top: 10%;
 }
 
+.butJoin {
+  width: 15vh;
+  height: 7vh;
+  background-color: var(--color-3);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.aboutBox a {
+  align-self: center;
+  text-decoration: none;
+}
+.butJoin:hover {
+  background-color: white;
+  border: 3px solid var(--color-3);
+  color: var(--color-3);
+  transform: scale(1.2);
+}
+
+.four .aboutBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /*GUIDES PAGE*/
 
 #gpTitleBox {
