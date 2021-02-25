@@ -65,6 +65,12 @@ body {
   left: 46vw;
 }
 
+.pos2 {
+  position: absolute;
+  top: 30vh;
+  left: 46vw;
+}
+
 @keyframes rotate {
   from {
     transform: scale(1);
@@ -180,6 +186,7 @@ header img {
   display: flex;
   background-color: var(--color-2);
   padding-bottom: 5rem;
+  color: var(--color-8);
 }
 
 #slideBG {
@@ -215,7 +222,7 @@ header img {
 
 .titleBox {
   width: 40vw;
-  margin-top: 7rem;
+  margin-top: 2rem;
   padding-right: 5rem;
   margin-left: 10rem;
   padding-bottom: 2rem;
@@ -291,10 +298,13 @@ button:visited {
 
 #marquee {
   background-color: white;
+  padding-top: 3rem;
 }
 
 #marquee h2 {
   margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--color-7);
 }
 /*BOXES*/
 
@@ -305,13 +315,21 @@ h2 {
   margin-bottom: 0.5rem;
   padding-top: 1rem;
   font-family: "Lato", sans-serif;
-  /* font-family: Arial, Helvetica, sans-serif;
-  color: #4a6040; */
+}
+
+.landingPage .gpIntro {
+  margin: 7vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+  margin-top: 1.5vw;
+  margin-bottom: 4vw;
 }
 
 #boxes {
   background-color: #e3a22a;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+  color: var(--color-7);
 }
 .boxes {
   display: flex;
@@ -1275,6 +1293,8 @@ footer p {
   padding-top: 11rem;
 }
 
+/*JOIN US PAGE*/
+
 #joinusbox {
   display: flex;
   flex-direction: row;
@@ -1403,12 +1423,28 @@ label {
   font-size: 5rem;
 }
 
+.portfolioMain .gpIntro {
+  color: var(--color-6);
+  margin: 7vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+  margin-top: -1vw;
+  margin-bottom: 4vw;
+  text-align: center;
+}
+
+.portfolioMain .gpIntro p {
+  color: var(--color-6);
+  font-size: 1.5rem;
+}
+
 .portfolioGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 400px));
   gap: 2rem;
   justify-content: center;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .portfolioArticle a {
@@ -1588,10 +1624,11 @@ label {
 }
 
 .microText {
-  margin-top: 0.5rem;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
   font-size: 1rem;
+  background-color: var(--color-3);
 }
 /*OTHER CAMERAS ON CAMERA LIST PAGE*/
 
@@ -1633,6 +1670,11 @@ label {
     position: absolute;
     top: 52vh;
     left: 38vw;
+  }
+  .pos2 {
+    position: absolute;
+    top: 30vh;
+    left: 43.5vw;
   }
   /* LANDING PAGE */
   #welcomeMsg {
@@ -1876,7 +1918,7 @@ label {
     width: 100vw;
     height: 13vh;
     left: 0;
-    top: 4rem;
+    top: 7rem;
     background-color: rgba(255, 255, 255, 0.5);
   }
 
@@ -2103,7 +2145,7 @@ label {
     width: 100vw;
     height: 9vh;
     left: 0;
-    top: 4rem;
+    top: 7rem;
     background-color: rgba(255, 255, 255, 0.5);
   }
 
@@ -2207,6 +2249,11 @@ label {
     top: 66vh;
     left: 41vw;
   }
+  .pos2 {
+    position: absolute;
+    top: 30vh;
+    left: 42vw;
+  }
   .marquee img {
     max-width: 80%;
     display: block;
@@ -2263,6 +2310,11 @@ label {
     top: 106vh;
     left: 33vw;
   }
+  .pos2 {
+    position: absolute;
+    top: 40vh;
+    left: 36vw;
+  }
 
   footer {
     display: flex;
@@ -2284,6 +2336,11 @@ label {
     position: absolute;
     top: 63vh;
     left: 45.5vw;
+  }
+  .pos2 {
+    position: absolute;
+    top: 30vh;
+    left: 43.5vw;
   }
 }
 
