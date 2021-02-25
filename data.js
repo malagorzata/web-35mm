@@ -40,10 +40,6 @@ function handleSelectType(evt) {
   getData();
 }
 
-/*preloader*/
-// document.addEventListener("load", () => {
-// console.log(loading);
-// });
 
 /*API key*/
 const options = {
@@ -52,8 +48,11 @@ const options = {
   },
 };
 
+document.querySelector(".preloaderBackgorund").classList.add("hidden");
+
 function getData() {
   document.querySelector(".preloader").classList.remove("hidden");
+  document.querySelector(".preloaderBackgorund").classList.remove("hidden");
   fetch(url, options)
     .then((response) => {
       if (!response.ok) {
@@ -66,6 +65,7 @@ function getData() {
       // console.log(data);
       handleData(data);
       document.querySelector(".preloader").classList.add("hidden");
+      document.querySelector(".preloaderBackgorund").classList.add("hidden");
     })
     .catch((e) => {
       console.error("an error occured:", e.message);

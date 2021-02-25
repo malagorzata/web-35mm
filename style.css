@@ -57,6 +57,20 @@ body {
   width: 15vh;
   height: 12vh;
   animation: 1s rotate infinite;
+  z-index: 1;
+}
+
+.preloaderBackgorund{
+  height: 200%;
+  width: 100%;
+  background-color: #c2aa9056;
+  z-index: 0;
+  position: absolute;
+}
+
+.preloader p{
+  text-align: center;
+  padding-top: 5.5rem;
 }
 
 .pos {
