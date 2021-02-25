@@ -1,14 +1,14 @@
-const url1 = "https://web35mm-e688.restdb.io/rest/cameras/?max=4";
-const mediaurl1 = "https://web35mm-e688.restdb.io/media/";
+const url = "https://web35mm-e688.restdb.io/rest/cameras/?max=4";
+const mediaurl = "https://web35mm-e688.restdb.io/media/";
 
 /*API key*/
-const options1 = {
+const options = {
   headers: {
     "x-apikey": "603254a35ad3610fb5bb646f",
   },
 };
 
-fetch(url1, options1)
+fetch(url, options)
   .then((response) => {
     if (!response.ok) {
       throw Error(response.statusText);
