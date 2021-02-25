@@ -77,6 +77,15 @@ body {
 .hidden {
   display: none;
 }
+/*HEADER*/
+header {
+  position: fixed;
+}
+
+header img {
+  max-width: 70%;
+  z-index: 2;
+}
 
 /*MENU*/
 
@@ -150,7 +159,7 @@ body {
 }
 
 #toggleIcon p {
-  color: antiquewhite;
+  color: white;
   font-size: 1.5em;
 }
 
@@ -570,6 +579,35 @@ form {
 
 .aboutBox {
   margin-top: 10%;
+}
+
+.butJoin {
+  width: 15vh;
+  height: 7vh;
+  background-color: var(--color-3);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.aboutBox a {
+  align-self: center;
+  text-decoration: none;
+}
+.butJoin:hover {
+  background-color: white;
+  border: 3px solid var(--color-3);
+  color: var(--color-3);
+  transform: scale(1.2);
+}
+
+.four .aboutBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*GUIDES PAGE*/
