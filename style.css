@@ -589,8 +589,7 @@ form {
   border-radius: 5px;
   text-align: center;
   padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin-bottom: 0;
 }
 
 .aboutBox a {
@@ -1251,28 +1250,28 @@ footer p {
   font-size: 1rem;
 }
 
-  /*JOIN US PAGE*/
- #formAndReadMore{
+/*JOIN US PAGE*/
+#formAndReadMore {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-#joinusReadmore{
-background-color: var(--color-8);
+#joinusReadmore {
+  background-color: var(--color-8);
 }
 
-#joinusReadmore p{
+#joinusReadmore p {
   color: #dadada;
   font-size: 2rem;
   text-align: center;
 }
 
-#joinusReadmore button{
+#joinusReadmore button {
   margin-left: 41.5%;
   margin-top: 1.5rem;
 }
 
-#joinusReadmore{
+#joinusReadmore {
   padding-top: 11rem;
 }
 
@@ -1356,7 +1355,6 @@ background-color: var(--color-8);
   margin-left: 1.4rem;
 }
 
-
 .joinusButton {
   margin-left: 40%;
   margin-bottom: 2rem;
@@ -1366,7 +1364,7 @@ background-color: var(--color-8);
   padding-top: 2rem;
 }
 
-.logoform h1{
+.logoform h1 {
   font-size: 2rem;
   text-align: center;
 }
@@ -2126,7 +2124,7 @@ label {
   .camerasbuyFlex {
     margin-left: 1rem;
   }
-  
+
   /*JOIN US*/
 
   #infoboxes {
@@ -2136,13 +2134,13 @@ label {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
+
   #infoboxes .boxinfo {
     margin-right: 1rem;
     margin-left: 1rem;
     margin-top: 1rem;
   }
-  
+
   #infoboxes .boxinfo p {
     font-size: 1.2rem;
     line-height: 1.7rem;
@@ -2150,52 +2148,51 @@ label {
     margin-left: 1.4rem;
   }
 
-  #formAndReadMore{
-    display:flex;
+  #formAndReadMore {
+    display: flex;
     flex-direction: column;
   }
-  
-  #joinusReadmore button{
+
+  #joinusReadmore button {
     margin-left: 37%;
   }
-  
-  #joinusReadmore{
+
+  #joinusReadmore {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
   .joinusButton {
-  margin-left: 35%;
-}
+    margin-left: 35%;
+  }
 
+  #joinusform .input-group {
+    margin-left: 10%;
+  }
 
-#joinusform .input-group {
-  margin-left: 10%;
-} 
+  #joinusbox {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-8);
+  }
 
-#joinusbox {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--color-8);
-}
+  .joinustitle {
+    width: 100vw;
+    margin-top: 8rem;
+    padding-right: 3rem;
+    margin-left: 1rem;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
 
-.joinustitle {
-  width: 100vw;
-  margin-top: 8rem;
-  padding-right: 3rem;
-  margin-left: 1rem;
-  text-align: center;
-  padding-bottom: 3rem;
-}
+  .joinusimg img {
+    display: none;
+  }
 
-.joinusimg img {
-  display:none;
-}
-
-#joinusbanner {
-  width: 90vw;
-  text-align: center;
-  margin-left:1rem;
-} 
+  #joinusbanner {
+    width: 90vw;
+    text-align: center;
+    margin-left: 1rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2300,6 +2297,7 @@ label {
   .products {
     grid-template-columns: repeat(auto-fill, minmax(150px, 450px));
   }
+ 
 }
 
 @media only screen and (max-width: 600px) {
@@ -2330,4 +2328,10 @@ label {
   footer p {
     font-size: 0.7rem;
   }
+}
+
+@media only screen and (max-width: 1300px) {
+
+.butJoin {
+  margin-bottom: 1rem;
 }
