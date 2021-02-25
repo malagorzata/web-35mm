@@ -1529,6 +1529,76 @@ label {
     width: 250px;
     font-size: 1.1rem;
   }
+  
+  /*JOIN US*/
+
+  #infoboxes {
+    margin-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  #infoboxes .boxinfo {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  
+  #infoboxes .boxinfo p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-top: 3.1rem;
+    margin-left: 1.4rem;
+  }
+
+  #formAndReadMore{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  #joinusReadmore button{
+    margin-left: 37%;
+  }
+  
+  #joinusReadmore{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .joinusButton {
+  margin-left: 35%;
+}
+
+
+#joinusform .input-group {
+  margin-left: 10%;
+} 
+
+#joinusbox {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-8);
+}
+
+.joinustitle {
+  width: 100vw;
+  margin-top: 8rem;
+  padding-right: 3rem;
+  margin-left: 1rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.joinusimg img {
+  display:none;
+}
+
+#joinusbanner {
+  width: 90vw;
+  text-align: center;
+  margin-left:1rem;
+} 
 }
 
 @media only screen and (max-width: 700px) {
