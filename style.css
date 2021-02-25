@@ -1010,6 +1010,30 @@ a .guideBox:hover {
 }
 
 /*JOIN US PAGE*/
+#formAndReadMore{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#joinusReadmore{
+background-color: var(--color-8);
+}
+
+#joinusReadmore p{
+  color: #dadada;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#joinusReadmore button{
+  margin-left: 41.5%;
+  margin-top: 1.5rem;
+}
+
+#joinusReadmore{
+  padding-top: 11rem;
+}
+
 #joinusbox {
   display: flex;
   flex-direction: row;
@@ -1089,17 +1113,20 @@ a .guideBox:hover {
   margin-top: 3.1rem;
   margin-left: 1.4rem;
 }
-#joinusform .logoform {
-  margin-left: 46%;
-}
+
 
 .joinusButton {
-  margin-left: 46%;
+  margin-left: 40%;
   margin-bottom: 2rem;
 }
 
 #joinusform {
   padding-top: 2rem;
+}
+
+.logoform h1{
+  font-size: 2rem;
+  text-align: center;
 }
 
 #joinusform .input-group {
@@ -1110,7 +1137,7 @@ a .guideBox:hover {
 .input-group .form-control {
   padding: 10px 0;
   width: 280px;
-  margin-left: 8rem;
+  margin-left: 0;
 }
 
 #joinusform input,
@@ -1119,7 +1146,7 @@ label {
 }
 
 #joinusform label {
-  margin-left: 8rem;
+  margin-left: 0;
 }
 
 /*TABLET VIEW*/
