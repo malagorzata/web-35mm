@@ -1209,8 +1209,9 @@ footer h1 {
 
 footer p {
   font-size: 1rem;
-  /*JOIN US PAGE*/
 }
+
+/*JOIN US PAGE*/
 
 #joinusbox {
   display: flex;

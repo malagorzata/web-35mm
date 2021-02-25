@@ -348,10 +348,35 @@ body {
   font-size: 1rem;
 }
 
+/*FOOTER*/
+
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-3);
+}
+.footer-logo {
+  max-width: 10%;
+  align-self: center;
+  margin-top: 1rem;
+}
+.inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.left,
+.right {
+  padding: 1rem;
+}
+
+footer h1 {
+  font-size: 1.5rem;
+}
+
+footer p {
+  font-size: 1rem;
 }
 
 /*TABLET VIEW*/
@@ -429,5 +454,48 @@ footer {
     margin-bottom: 3px;
     font-size: 1.3rem;
     transform: rotate(0);
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .inside {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left,
+  .right {
+    justify-content: center;
+    padding: 1rem;
+  }
+  footer h1 {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .left,
+  .right {
+    justify-content: center;
+    padding: 1rem;
+  }
+  footer h1 {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
   }
 }
