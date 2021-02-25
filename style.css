@@ -60,7 +60,7 @@ body {
   z-index: 1;
 }
 
-.preloaderBackgorund{
+.preloaderBackgorund {
   height: 200%;
   width: 100%;
   background-color: #c2aa9056;
@@ -68,7 +68,7 @@ body {
   position: absolute;
 }
 
-.preloader p{
+.preloader p {
   text-align: center;
   padding-top: 5.5rem;
 }
@@ -2297,21 +2297,6 @@ label {
 }
 
 @media only screen and (max-width: 430px) {
-  .boxes {
-    display: grid;
-    grid-area: boxes;
-    grid-template-areas:
-      "box1"
-      "box3";
-    padding-top: 0;
-  }
-
-  .box1,
-  .box2 {
-    margin: 1rem;
-    width: 70vw;
-    height: 35vw;
-  }
   .marquee img {
     max-width: 60%;
     display: block;
@@ -2334,7 +2319,10 @@ label {
     flex-direction: column;
     align-self: center;
   }
-
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
   .inside {
     flex-direction: column;
     justify-content: center;
@@ -2367,20 +2355,20 @@ label {
   .products {
     grid-template-columns: repeat(auto-fill, minmax(150px, 450px));
   }
-}
-
-@media only screen and (max-width: 600px) {
-  .left,
-  .right {
-    justify-content: center;
-    padding: 1rem;
-  }
-  footer h1 {
-    font-size: 1rem;
+  .boxes {
+    display: grid;
+    grid-area: boxes;
+    grid-template-areas:
+      "box1"
+      "box3";
+    padding-top: 0;
   }
 
-  footer p {
-    font-size: 0.7rem;
+  .box1,
+  .box2 {
+    margin: 1rem;
+    width: 70vw;
+    height: 35vw;
   }
 }
 
