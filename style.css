@@ -373,7 +373,7 @@ a .box2:hover {
 
 #catheader {
   width: 100vw;
-  background-color: var(--color-3);
+  background-color: var(--color-8);
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
@@ -390,6 +390,7 @@ a .box2:hover {
   font-weight: bold;
   text-align: center;
   margin: 3rem;
+  color: #dadada
 }
 
 .camera a {
