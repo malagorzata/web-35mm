@@ -381,7 +381,7 @@ a .box2:hover {
 
 #catheader {
   width: 100vw;
-  background-color: var(--color-3);
+  background-color: var(--color-8);
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
@@ -398,11 +398,16 @@ a .box2:hover {
   font-weight: bold;
   text-align: center;
   margin: 3rem;
+  color: #dadada
 }
 
 .camera a {
   color: white;
   text-decoration: none;
+}
+
+.camera a:hover{
+  color: var(--color-8);
 }
 
 .options form .level,
@@ -417,6 +422,10 @@ a .box2:hover {
 
 .options form p {
   text-align: center;
+}
+
+.camera .cameraimg:hover{
+opacity: 70%;
 }
 
 /*CHECKBOXES*/
@@ -1073,7 +1082,7 @@ footer p {
 #joinusbox {
   display: flex;
   flex-direction: row;
-  background-color: var(--color-3);
+  background-color: var(--color-8);
 }
 
 .joinustitle {
@@ -1086,7 +1095,7 @@ footer p {
 .joinustitle h1 {
   font-size: 5rem;
   font-family: var(--font-1);
-  color: var(--color-5);
+  color: #dadada;
 }
 
 .joinusimg img {
@@ -1098,7 +1107,7 @@ footer p {
   width: 100vw;
   text-align: center;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 #joinusbanner h1 {
@@ -1159,7 +1168,6 @@ footer p {
 }
 
 #joinusform {
-  background-color: var(--color-5);
   padding-top: 2rem;
 }
 
@@ -1171,6 +1179,14 @@ footer p {
 .input-group .form-control {
   padding: 10px 0;
   width: 280px;
+  margin-left: 8rem;
+}
+
+#joinusform input, label{
+display: block;
+}
+
+#joinusform label{
   margin-left: 8rem;
 }
 
