@@ -40,7 +40,6 @@ function handleSelectType(evt) {
   getData();
 }
 
-
 /*API key*/
 const options = {
   headers: {
@@ -92,7 +91,10 @@ function showProduct(product) {
   copy.querySelector(
     "img.cameraimg"
   ).src = `https://web35mm-e688.restdb.io/media/${product.img}?s=w`;
-  copy.querySelector("a").href = `camera-view.html?_id=${product._id}`;
+  copy.querySelector(".photoAtag").href = `camera-view.html?_id=${product._id}`;
+  copy.querySelector(
+    ".readmoreAtag"
+  ).href = `camera-view.html?_id=${product._id}`;
 
   //grab the parent
   const parent = document.querySelector(".products");
