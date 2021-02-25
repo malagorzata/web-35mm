@@ -476,6 +476,10 @@ a .box2:hover {
   font-size: 1rem;
 }
 
+.options form {
+  margin: 1rem;
+}
+
 .camera .cameraimg:hover {
   opacity: 70%;
 }
