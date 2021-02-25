@@ -398,6 +398,10 @@ a .box2:hover {
   text-decoration: none;
 }
 
+.camera a:hover{
+  color: var(--color-8);
+}
+
 .options form .level,
 .options form .format,
 .options form .type {
@@ -410,6 +414,10 @@ a .box2:hover {
 
 .options form p {
   text-align: center;
+}
+
+.camera .cameraimg:hover{
+opacity: 70%;
 }
 
 /*CHECKBOXES*/
