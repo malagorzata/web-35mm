@@ -77,6 +77,15 @@ body {
 .hidden {
   display: none;
 }
+/*HEADER*/
+header {
+  position: fixed;
+}
+
+header img {
+  max-width: 70%;
+  z-index: 2;
+}
 
 /*MENU*/
 
@@ -150,7 +159,7 @@ body {
 }
 
 #toggleIcon p {
-  color: antiquewhite;
+  color: white;
   font-size: 1.5em;
 }
 
@@ -427,10 +436,12 @@ a .box2:hover {
   border-radius: 3%;
   background-color: var(--color-5);
   border-color: var(--color-5);
+  font-size: 1rem;
 }
 
 .options form p {
   text-align: center;
+  font-size: 1rem;
 }
 
 .camera .cameraimg:hover {
@@ -568,6 +579,34 @@ form {
 
 .aboutBox {
   margin-top: 10%;
+}
+
+.butJoin {
+  width: 15vh;
+  height: 7vh;
+  background-color: var(--color-3);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.aboutBox a {
+  align-self: center;
+  text-decoration: none;
+}
+.butJoin:hover {
+  background-color: white;
+  border: 3px solid var(--color-3);
+  color: var(--color-3);
+  transform: scale(1.2);
+}
+
+.four .aboutBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*GUIDES PAGE*/
@@ -1209,7 +1248,31 @@ footer h1 {
 
 footer p {
   font-size: 1rem;
-  /*JOIN US PAGE*/
+}
+
+/*JOIN US PAGE*/
+#formAndReadMore {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#joinusReadmore {
+  background-color: var(--color-8);
+}
+
+#joinusReadmore p {
+  color: #dadada;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#joinusReadmore button {
+  margin-left: 41.5%;
+  margin-top: 1.5rem;
+}
+
+#joinusReadmore {
+  padding-top: 11rem;
 }
 
 #joinusbox {
@@ -1291,17 +1354,19 @@ footer p {
   margin-top: 3.1rem;
   margin-left: 1.4rem;
 }
-#joinusform .logoform {
-  margin-left: 46%;
-}
 
 .joinusButton {
-  margin-left: 46%;
+  margin-left: 40%;
   margin-bottom: 2rem;
 }
 
 #joinusform {
   padding-top: 2rem;
+}
+
+.logoform h1 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 #joinusform .input-group {
@@ -1312,7 +1377,7 @@ footer p {
 .input-group .form-control {
   padding: 10px 0;
   width: 280px;
-  margin-left: 8rem;
+  margin-left: 0;
 }
 
 #joinusform input,
@@ -1321,7 +1386,7 @@ label {
 }
 
 #joinusform label {
-  margin-left: 8rem;
+  margin-left: 0;
 }
 /* PORTFOLIO PAGE */
 
@@ -2059,6 +2124,75 @@ label {
   .camerasbuyFlex {
     margin-left: 1rem;
   }
+
+  /*JOIN US*/
+
+  #infoboxes {
+    margin-top: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #infoboxes .boxinfo {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  #infoboxes .boxinfo p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-top: 3.1rem;
+    margin-left: 1.4rem;
+  }
+
+  #formAndReadMore {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #joinusReadmore button {
+    margin-left: 37%;
+  }
+
+  #joinusReadmore {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .joinusButton {
+    margin-left: 35%;
+  }
+
+  #joinusform .input-group {
+    margin-left: 10%;
+  }
+
+  #joinusbox {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-8);
+  }
+
+  .joinustitle {
+    width: 100vw;
+    margin-top: 8rem;
+    padding-right: 3rem;
+    margin-left: 1rem;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  .joinusimg img {
+    display: none;
+  }
+
+  #joinusbanner {
+    width: 90vw;
+    text-align: center;
+    margin-left: 1rem;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -2192,5 +2326,11 @@ label {
 
   footer p {
     font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .butJoin {
+    margin-bottom: 1rem;
   }
 }
