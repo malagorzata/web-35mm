@@ -2297,7 +2297,6 @@ label {
   .products {
     grid-template-columns: repeat(auto-fill, minmax(150px, 450px));
   }
- 
 }
 
 @media only screen and (max-width: 600px) {
@@ -2331,7 +2330,7 @@ label {
 }
 
 @media only screen and (max-width: 1300px) {
-
-.butJoin {
-  margin-bottom: 1rem;
+  .butJoin {
+    margin-bottom: 1rem;
+  }
 }
