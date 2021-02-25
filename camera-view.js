@@ -88,6 +88,7 @@ function showRec(rec) {
   copy.querySelector(
     "img.cameraimg"
   ).src = `https://web35mm-e688.restdb.io/media/${rec.img}?s=w`;
+  copy.querySelector(".camRec a").href = `camera-view.html?_id=${rec._id}`;
 
   //grab the parent
   const parent = document.querySelector(".recCam");
