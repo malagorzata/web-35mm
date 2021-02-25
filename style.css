@@ -1102,6 +1102,14 @@ a .guideBox:hover {
   margin-left: 8rem;
 }
 
+#joinusform input, label{
+display: block;
+}
+
+#joinusform label{
+  margin-left: 8rem;
+}
+
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
   /* LANDING PAGE */
