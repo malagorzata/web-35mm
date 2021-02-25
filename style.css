@@ -177,6 +177,7 @@ body {
   display: flex;
   background-color: var(--color-2);
   padding-bottom: 5rem;
+  color: var(--color-8);
 }
 
 #slideBG {
@@ -288,10 +289,13 @@ button:visited {
 
 #marquee {
   background-color: white;
+  padding-top: 3rem;
 }
 
 #marquee h2 {
   margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--color-7);
 }
 /*BOXES*/
 
@@ -302,13 +306,21 @@ h2 {
   margin-bottom: 0.5rem;
   padding-top: 1rem;
   font-family: "Lato", sans-serif;
-  /* font-family: Arial, Helvetica, sans-serif;
-  color: #4a6040; */
+}
+
+.landingPage .gpIntro {
+  margin: 7vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+  margin-top: 1.5vw;
+  margin-bottom: 4vw;
 }
 
 #boxes {
   background-color: #e3a22a;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+  color: var(--color-7);
 }
 .boxes {
   display: flex;
