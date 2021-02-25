@@ -275,6 +275,9 @@ button:visited {
   background-color: white;
 }
 
+#marquee h2 {
+  margin-bottom: 1rem;
+}
 /*BOXES*/
 
 h2 {
