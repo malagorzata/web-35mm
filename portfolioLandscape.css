@@ -341,8 +341,11 @@ body {
   transform: rotate(-90deg);
 }
 
-.portfolioTitleText p {
-  font-size: 1.4rem;
+.microText {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 footer {
