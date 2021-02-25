@@ -423,7 +423,8 @@ a .box2:hover {
 .guideBox4 {
   width: 25vw;
   height: 15vw;
-  margin-right: 3vw;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
   margin-bottom: 3vw;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1156,7 +1157,7 @@ a .guideBox4:hover {
   }
 
   .guidesGrid {
-    margin-left: 52vw;
+    margin-left: 50vw;
   }
 
   .guideBox1,
