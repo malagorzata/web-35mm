@@ -270,6 +270,7 @@ button:visited {
 .marquee {
   display: flex;
   overflow-x: auto;
+  align-items: flex-start;
 }
 
 .marquee img {
@@ -1147,7 +1148,7 @@ a .guideBox4:hover {
 .breadcrumbs li:last-child::after {
   background: none;
 }
-#cameraView h2 {
+.camera-name {
   background-color: var(--color-3);
   padding: 2rem;
 }
@@ -1527,7 +1528,40 @@ label {
   margin-bottom: 0.5rem;
   font-size: 1rem;
 }
+/*OTHER CAMERAS ON CAMERA LIST PAGE*/
 
+.recCam {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 400px));
+  justify-content: center;
+  margin: 0;
+}
+
+.camRec img {
+  max-width: 100%;
+  border: var(--color-5) 8px solid;
+  border-radius: 0.9%;
+  height: 250px;
+  width: auto;
+  margin: 0.5rem;
+}
+
+.camRec {
+  text-align: center;
+  margin: 1rem;
+}
+
+.camRec a {
+  color: var(--color-8);
+}
+
+.camRec a:hover {
+  color: var(--color-5);
+}
+.recommended h2 {
+  background-color: var(--color-5);
+  padding: 1rem;
+}
 /*TABLET VIEW*/
 @media only screen and (max-width: 899px) {
   .pos {
