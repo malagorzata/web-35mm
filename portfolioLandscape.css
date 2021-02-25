@@ -132,6 +132,17 @@ body {
   color: #ad4100;
 }
 
+/*HEADER*/
+header {
+  position: fixed;
+  z-index: 3;
+}
+
+header img {
+  max-width: 70%;
+  z-index: 2;
+}
+
 /* PORTFOLIO PAGE */
 
 .portfolioMain {
@@ -345,8 +356,15 @@ body {
   padding-top: 4rem;
   padding-left: 1rem;
   padding-bottom: 0.5rem;
-  font-size: 1rem;
-  background-color: var(--color-3);
+  font-size: 1.3rem;
+}
+
+.AnaSPortfolio .microText {
+  background-color: var(--color-2);
+}
+
+.AlexPortfolio .microText {
+  background-color: var(--color-9);
 }
 
 /*FOOTER*/
@@ -356,6 +374,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   background-color: var(--color-3);
+  z-index: 3;
 }
 .footer-logo {
   max-width: 10%;
