@@ -199,7 +199,6 @@ header img {
 #welcomeMsg {
   display: flex;
   background-color: var(--color-2);
-  padding-bottom: 5rem;
   color: var(--color-8);
 }
 
@@ -312,11 +311,11 @@ button:visited {
 
 #marquee {
   background-color: white;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 #marquee h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   font-size: 2.5rem;
   color: var(--color-7);
 }
