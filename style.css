@@ -30,6 +30,15 @@
   --font-2: Kayak Regular;
   --font-3: "Playfair Display", serif;
   --main-text-color: #111;
+
+  --marquee-width: 100vw;
+  --marquee-height: 93vh;
+  /* --marquee-elements: 12; */ /* defined with JavaScript */
+  --marquee-elements-displayed: 3;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 6s);
 }
 
 * {
@@ -398,7 +407,7 @@ a .box2:hover {
   font-weight: bold;
   text-align: center;
   margin: 3rem;
-  color: #dadada
+  color: #dadada;
 }
 
 .camera a {
@@ -406,7 +415,7 @@ a .box2:hover {
   text-decoration: none;
 }
 
-.camera a:hover{
+.camera a:hover {
   color: var(--color-8);
 }
 
@@ -424,8 +433,8 @@ a .box2:hover {
   text-align: center;
 }
 
-.camera .cameraimg:hover{
-opacity: 70%;
+.camera .cameraimg:hover {
+  opacity: 70%;
 }
 
 /*CHECKBOXES*/
@@ -562,6 +571,7 @@ form {
 }
 
 /*GUIDES PAGE*/
+
 #gpTitleBox {
   display: flex;
   background-color: var(--color-5);
@@ -1182,12 +1192,218 @@ footer p {
   margin-left: 8rem;
 }
 
-#joinusform input, label{
-display: block;
+#joinusform input,
+label {
+  display: block;
 }
 
-#joinusform label{
+#joinusform label {
   margin-left: 8rem;
+}
+/* PORTFOLIO PAGE */
+
+.portfolioMain {
+  background-color: var(--color-8);
+}
+
+.portfolioMain #guideTitle {
+  background-color: var(--color-8);
+  color: var(--color-6);
+}
+
+.portfolioMain #guideTitle h1 {
+  font-size: 5rem;
+}
+
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 400px));
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.portfolioArticle a {
+  text-decoration: none;
+  color: #111;
+}
+
+.portfolioPhotoBox {
+  width: 25rem;
+  height: 35rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.gosia {
+  background-image: url(images/gw_images/nyc.jpg);
+}
+
+.anna {
+  background-image: url(images/at_portfolio_35mm/at1.jpg);
+}
+
+.anas {
+  background-image: url(images/asch_portfolio_photos/image00004.jpeg);
+}
+
+.alex {
+  background-image: url(images/ac_portfolio_photos/image00001.jpeg);
+}
+
+.kasia {
+  background-image: url(images/xafex/kasia1.jpeg);
+}
+
+.photoboxText {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 25rem;
+  height: 35rem;
+  transition: opacity 0.25s;
+}
+
+.photoboxText > * {
+  transform: translateY(-20px);
+  transition: transform 0.25s;
+}
+
+.photoboxText p {
+  position: relative;
+  font-size: 2.5rem;
+  top: 50vh;
+  text-transform: uppercase;
+}
+
+.photoboxText:hover,
+.photoboxText:hover,
+.photoboxText:hover {
+  opacity: 0;
+}
+
+.photoboxText:hover > * {
+  transform: translateY(0);
+}
+
+.portfolioGosiaPage {
+  font-family: var(--font-2);
+  background-color: var(--color-8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioAnnaPage {
+  font-family: var(--font-2);
+  background-color: var(--color-3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioKasiaPage {
+  font-family: var(--font-2);
+  background-color: var(--color-1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee2 {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee2horizontal {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+    );
+  }
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height) * 3 / 4); /* 5rem; */
+  white-space: nowrap;
+}
+
+.stopScrolling {
+  animation-play-state: paused;
+}
+
+.marquee-content li img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolioGosiaPage .marquee-content li img {
+  border: 10px solid var(--color-8);
+}
+
+.portfolioAnnaPage .marquee-content li img {
+  border: 10px solid var(--color-3);
+}
+
+.portfolioKasiaPage .marquee-content li img {
+  border: 10px solid var(--color-1);
+}
+
+.portfolioTitleBox {
+  position: absolute;
+  width: 8rem;
+  height: 100vh;
+  left: 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.portfolioTitleText {
+  margin: 1rem;
+  margin-top: 25rem;
+}
+
+.portfolioTitleText h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+
+.microText {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 /*TABLET VIEW*/
@@ -1428,6 +1644,30 @@ display: block;
     padding-right: 3rem;
     background-color: var(--color-2);
   } */
+
+  /* PORTFOLIO PAGE */
+  .portfolioTitleBox {
+    position: absolute;
+    width: 100vw;
+    height: 13vh;
+    left: 0;
+    top: 4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .portfolioTitleText {
+    display: flex;
+    margin: 0.8rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  .portfolioTitleText h1 {
+    margin: 0;
+    margin-right: 2rem;
+    font-size: 2rem;
+    transform: rotate(0);
+  }
 }
 
 /*MOBILE VIEW*/
@@ -1601,6 +1841,48 @@ display: block;
     height: 45px;
     width: 250px;
     font-size: 1.1rem;
+  }
+
+  /* PORTFOLIO PAGE */
+
+  .portfolioTitleText {
+    font-size: 12px;
+  }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 93vh;
+    --marquee-elements-displayed: 1;
+    --marquee-animation-duration: calc(var(--marquee-elements) * 8s);
+  }
+
+  .marquee-content li img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--color-8);
+  }
+
+  .portfolioTitleBox {
+    position: absolute;
+    width: 100vw;
+    height: 9vh;
+    left: 0;
+    top: 4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .portfolioTitleText {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .portfolioTitleText h1 {
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 1.3rem;
+    transform: rotate(0);
   }
 }
 
