@@ -65,6 +65,12 @@ body {
   left: 46vw;
 }
 
+.pos2 {
+  position: absolute;
+  top: 30vh;
+  left: 46vw;
+}
+
 @keyframes rotate {
   from {
     transform: scale(1);
@@ -206,7 +212,7 @@ body {
 
 .titleBox {
   width: 40vw;
-  margin-top: 7rem;
+  margin-top: 2rem;
   padding-right: 5rem;
   margin-left: 10rem;
   padding-bottom: 2rem;
@@ -1570,6 +1576,11 @@ label {
     top: 52vh;
     left: 38vw;
   }
+  .pos2 {
+    position: absolute;
+    top: 30vh;
+    left: 43.5vw;
+  }
   /* LANDING PAGE */
   #welcomeMsg {
     display: flex;
@@ -2074,6 +2085,11 @@ label {
     top: 66vh;
     left: 41vw;
   }
+  .pos2 {
+    position: absolute;
+    top: 30vh;
+    left: 42vw;
+  }
   .marquee img {
     max-width: 80%;
     display: block;
@@ -2130,6 +2146,11 @@ label {
     top: 106vh;
     left: 33vw;
   }
+  .pos2 {
+    position: absolute;
+    top: 40vh;
+    left: 36vw;
+  }
 
   footer {
     display: flex;
@@ -2151,6 +2172,11 @@ label {
     position: absolute;
     top: 63vh;
     left: 45.5vw;
+  }
+  .pos2 {
+    position: absolute;
+    top: 30vh;
+    left: 43.5vw;
   }
 }
 
