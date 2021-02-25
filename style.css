@@ -492,7 +492,7 @@ a .box2:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
-  grid-auto-rows: minmax(400px, auto);
+  grid-auto-rows: minmax(410px, auto);
 }
 
 .one {
@@ -550,14 +550,15 @@ a .box2:hover {
 .about-us p {
   font-family: var(--font-2);
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   text-align: center;
   padding: 1rem;
 }
 
 .intro {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
   font-family: var(--font-2);
   background-color: white;
   text-align: center;
@@ -1693,7 +1694,7 @@ label {
     grid-auto-rows: minmax(200px, auto);
   }
   .intro {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .aboutBox {
     margin: 0;
