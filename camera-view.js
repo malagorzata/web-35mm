@@ -10,7 +10,9 @@ const options = {
   },
 };
 
+document.querySelector(".preloaderBackgorund").classList.add("hidden");
 document.querySelector(".preloader").classList.remove("hidden");
+document.querySelector(".preloaderBackgorund").classList.remove("hidden");
 fetch(url, options)
   .then((response) => {
     if (!response.ok) {
@@ -22,6 +24,7 @@ fetch(url, options)
   .then((data) => {
     handleCameras(data);
     document.querySelector(".preloader").classList.add("hidden");
+    document.querySelector(".preloaderBackgorund").classList.add("hidden");
   })
   .catch((e) => {
     console.error("an error occured:", e.message);
