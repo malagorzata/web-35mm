@@ -148,7 +148,7 @@ body {
   color: #ad4100;
 }
 
-#toggleIcon p:hover{
+#toggleIcon p:hover {
   opacity: 50%;
 }
 
@@ -1002,7 +1002,7 @@ a .guideBox:hover {
 #joinusbox {
   display: flex;
   flex-direction: row;
-  background-color: var(--color-3);
+  background-color: var(--color-8);
 }
 
 .joinustitle {
@@ -1015,7 +1015,7 @@ a .guideBox:hover {
 .joinustitle h1 {
   font-size: 5rem;
   font-family: var(--font-1);
-  color: var(--color-5);
+  color: #dadada;
 }
 
 .joinusimg img {
@@ -1088,7 +1088,6 @@ a .guideBox:hover {
 }
 
 #joinusform {
-  background-color: var(--color-5);
   padding-top: 2rem;
 }
 
